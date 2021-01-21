@@ -1,6 +1,10 @@
-/* Note there a few "reset" styles given in reset.css. Review those before you begin */
+.page-header {
+  justify-content: space-between;
+}
+
+
 .heading {
-    height: 20vh;
+    height: 30vh;
     background: linear-gradient(
       rgba(0, 0, 0, 0.171), 
       rgba(0, 0, 0, 0.171)
@@ -8,5 +12,6 @@
     background-size: cover;
     background-position: center;
     color: #fff;
+    text-align: center;
   }
   

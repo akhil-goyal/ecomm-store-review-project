@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/ba2f0fa843.js" crossorigin="anonymous"></script>
-  
+
 </head>
 
 <body>
 
-  <header class="page-header container">
+  <header class="page-header container flex">
 
     <button type="button" class="nav-toggle">
       <i class="fas fa-bars"></i>
@@ -27,7 +27,7 @@
       Spruce <img src="/img/logo.png" style="height: 2rem; width: 1.5rem;" alt="Spruce Logo">
     </a>
 
-    <nav aria-label="Primary" class="navigation">
+    <nav style="display: none;" aria-label="Primary" class="navigation">
 
       <ul class="menu">
 
@@ -49,25 +49,25 @@
 
       </ul>
 
+      <!-- Additional links -->
+
+      <ul class="your-products flex">
+        <li><a href="#"><i class="far fa-heart"></i> Favourites</a></li>
+        <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+      </ul>
+
     </nav>
 
     <!-- Search for a product (non-functional) -->
-    <form class="search">
+    <!-- <form class="search"> -->
 
-      <label>Search
+      <!-- <label>Search
         <input type="search" name="find" id="find">
-      </label>
+      </label> -->
 
       <button type="button"><i class="fas fa-search"></i></button>
 
-    </form>
-
-    <!-- Additional links -->
-
-    <ul class="your-products">
-      <li><a href="#"><i class="far fa-heart"></i> Favourites</a></li>
-      <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
-    </ul>
+    <!-- </form> -->
 
   </header>
 
@@ -472,9 +472,9 @@
       </article>
     </section>
 
-    <nav aria-label="Pagination" class="pagination">
+    <nav aria-label="Pagination" class="pagination text-center">
       <p>1-6 of 23 products found</p>
-      <ol class="pages">
+      <ol class="pages flex">
         <li><a href="#" aria-label="Current Page, Page 1" aria-current="true">1</a></li>
         <li><a href="#" aria-label="Page 2">2</a></li>
         <li><a href="#" aria-label="Page 3">3</a></li>
@@ -485,13 +485,13 @@
   </main>
 
   <footer class="page-footer">
-    <ul class="social">
+    <ul class="social flex">
       <li><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
       <li><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
       <li><a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a></li>
     </ul>
     <nav aria-label="Legal">
-      <ul class="legal">
+      <ul class="legal flex">
         <li><a href="#">Terms of Use</a></li>
         <li><a href="#">Privacy Policy</a></li>
         <li><a href="#">Accessibility Policy</a></li>
