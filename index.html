@@ -8,51 +8,62 @@
   <meta name="description" content="Spruce delivers you both indoor & outdoor plants. Choose from a large
   variety of plants & order them now.">
   <meta name="author" content="Akhil Goyal">
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/ba2f0fa843.js" crossorigin="anonymous"></script>
+  
 </head>
 
 <body>
-  <header class="page-header">
-    <a href="index.html" class="logo">
-      Spruce
-    </a>
 
-    <!-- Navigation menu and toggle button (non-functional) -->
+  <header class="page-header container">
+
     <button type="button" class="nav-toggle">
       <i class="fas fa-bars"></i>
     </button>
+
+    <a href="index.html" class="logo">
+      Spruce <img src="/img/logo.png" style="height: 2rem; width: 1.5rem;" alt="Spruce Logo">
+    </a>
+
     <nav aria-label="Primary" class="navigation">
+
       <ul class="menu">
+
         <li><a href="#">Home</a>
+
         <li><a href="#">Categories</a>
+
           <ul class="submenu">
             <li><a href="#">Outdoor plants</a></li>
             <li><a href="#">Indoor plants</a></li>
             <li><a href="#">Air plants</a></li>
           </ul>
+
         </li>
+
         <li><a href="#">Gallery</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Support</a></li>
+
       </ul>
+
     </nav>
 
     <!-- Search for a product (non-functional) -->
     <form class="search">
+
       <label>Search
         <input type="search" name="find" id="find">
       </label>
 
-      <!-- -------- TBC --------- -->
       <button type="button"><i class="fas fa-search"></i></button>
 
     </form>
 
     <!-- Additional links -->
 
-    <!-- -------- TBC --------- -->
     <ul class="your-products">
       <li><a href="#"><i class="far fa-heart"></i> Favourites</a></li>
       <li><a href="#"><i class="fas fa-shopping-cart"></i> Cart</a></li>
@@ -66,7 +77,6 @@
       <h1>Exotic greens delivered to your doorstep.</h1>
     </header>
 
-    <!-- -------- TBC -------- -->
     <!-- CODEPEN (Rocco) : https://codepen.io/roccop/professor/dyprNyw?editors=1100 -->
     <!-- Filtering product form -->
     <form class="filters">
@@ -161,7 +171,6 @@
         <label for="sort">Sort by</label>
         <select name="sort" id="sort">
 
-          <!-- ---------- TBC --------- -->
           <option value="price-high">Price, highest to lowest</option>
           <option value="price-low">Price, lowest to highest</option>
           <option value="newest">Date Added</option>
@@ -477,9 +486,9 @@
 
   <footer class="page-footer">
     <ul class="social">
-      <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-      <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-      <li><a href="#"><i class="fab fa-twitter-square"></i> Twitter</a></li>
+      <li><a target="_blank" href="https://www.facebook.com"><i class="fab fa-facebook"></i> Facebook</a></li>
+      <li><a target="_blank" href="https://www.instagram.com"><i class="fab fa-instagram"></i> Instagram</a></li>
+      <li><a target="_blank" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i> Twitter</a></li>
     </ul>
     <nav aria-label="Legal">
       <ul class="legal">

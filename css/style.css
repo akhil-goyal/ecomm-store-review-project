@@ -1,1 +1,12 @@
 /* Note there a few "reset" styles given in reset.css. Review those before you begin */
+.heading {
+    height: 20vh;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.171), 
+      rgba(0, 0, 0, 0.171)
+    ),url(./../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
