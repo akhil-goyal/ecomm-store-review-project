@@ -24,10 +24,24 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(107, 155, 107);
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.575), 
+    rgba(0, 0, 0, 0.171)
+  ),url(/img/sidebar-background.jpg);
+  background-size: cover; 
+  background-position: center;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+}
+
+.sidebar-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidebar-logo {
+  font-family: var(--cursive-font);
+  font-size: 4rem;
 }
 
 .side-bar a {
@@ -43,12 +57,24 @@
   color: #f1f1f1;
 }
 
-.side-bar .menu-close {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.menu-close {
+  margin-right: 1em;
+}
+
+.menu a {
+  font-size: 1em;
+}
+
+.separator {
+  border-top: 1px solid rgba(175, 175, 175, 0.171);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.your-products {
+  display: flex;
+  justify-content: space-evenly;
+  width: 85%;
 }
 /* ---------------------------------------------------------------- */
 
@@ -97,6 +123,51 @@ font-weight: lighter;
 
 
 
+/* ---------------------- Section HIGHLIGHTS ---------------------- */
+.highlight-1 {
+  height: 40vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.377), 
+    rgba(0, 0, 0, 0.377)
+  ),url(/img/test4.jpg);
+  background-size: cover; 
+  background-position: center;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 7rem;
+}
+
+.highlight-2 {
+  height: 40vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.562), 
+    rgba(0, 0, 0, 0.562)
+  ),url(/img/test1.jpg);
+  background-size: cover; 
+  background-position: center;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 7rem;
+  margin-top: 1rem;
+}
+
+.highlight-3 {
+  height: 40vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.445), 
+    rgba(0, 0, 0, 0.445)
+  ),url(/img/test3.jpg);
+  background-size: cover; 
+  background-position: center;
+  border-radius: 1rem;
+  color: #fff;
+  padding: 7rem;
+  margin-top: 1rem;
+}
+/* ---------------------------------------------------------------- */
+
+
+
 /* ------------------------ Section FILTERS ----------------------- */
 .product-filters {
   justify-content: start;
@@ -104,6 +175,41 @@ font-weight: lighter;
 
 .filter-options {
   display: none;
+}
+
+.filter-plant-types input,
+.filter-pot-requirement input,
+.filter-plant-size input
+{
+  display: none;
+}
+
+.filter-plant-types li,
+.filter-pot-requirement li,
+.filter-plant-size li
+{
+  display: inline-block;
+}
+
+.filter-plant-types label,
+.filter-pot-requirement label,
+.filter-plant-size label
+{
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid rgb(4, 90, 4);
+  border-radius: 4px;
+  padding: 2px 5px;
+  color:rgb(4, 90, 4);
+}
+
+.filter-plant-types input:checked + label,
+.filter-pot-requirement input:checked + label,
+.filter-plant-size input:checked + label
+{
+  background-color:rgb(4, 90, 4);
+  color: #fff;
 }
 
 .fa-sliders-h {
@@ -121,17 +227,29 @@ font-weight: lighter;
 
 
 /* ------------------------ Section PRODUCTS ---------------------- */
+.product {
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
 .product img {
   height: 20rem;
   width: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
 }
-/* ---------------------------------------------------------------- */
 
+.product-title-icons {
+  justify-content: space-between;
+}
 
+.product-title-icons button {
+  padding: 0.5em;
+}
 
-/* ------------------------ Section PRODUCTS ---------------------- */
+.product-price-ratings {
+  justify-content: space-between;
+}
+
 .fa-shopping-cart {
   color: rgb(4, 90, 4);
 }
@@ -145,6 +263,48 @@ del {
 
 ins {
   color: rgb(4, 90, 4);
+}
+
+.pot-fields input,
+.size-fields input
+ {
+  display: none;
+}
+
+.pot-fields li,
+.size-fields li
+ {
+  display: inline-block;
+}
+
+
+.pot-fields label,
+.size-fields label
+{
+  cursor: pointer;
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid rgb(4, 90, 4);
+  border-radius: 4px;
+  padding: 2px 5px;
+  color:rgb(4, 90, 4);
+}
+
+.pot-fields input:checked + label,
+.size-fields input:checked + label
+{
+  background-color:rgb(4, 90, 4);
+  color: #fff;
+}
+
+.button-buy {
+  cursor: pointer;
+  display: inline-block;
+  background-color:  maroon;
+  border: 1px solid maroon;
+  border-radius: 4px;
+  padding: 2px 5px;
+  color: #fff;
 }
 /* ---------------------------------------------------------------- */
 
