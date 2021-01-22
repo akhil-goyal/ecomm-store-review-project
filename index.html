@@ -17,9 +17,17 @@
 
 <body>
 
+  <div class="side-bar">
+    <a href="javascript:void(0)" class="menu-close">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
   <header class="page-header container flex">
 
-    <button type="button" class="nav-toggle">
+    <button type="button" class="menu-bar">
       <i class="fas fa-bars"></i>
     </button>
 
@@ -65,7 +73,7 @@
         <input type="search" name="find" id="find">
       </label> -->
 
-    <button type="button"><i class="fas fa-search"></i></button>
+    <button class="button-search" type="button"><i class="fas fa-search"></i></button>
 
     <!-- </form> -->
 
@@ -118,112 +126,123 @@
 
     <!-- CODEPEN (Rocco) : https://codepen.io/roccop/professor/dyprNyw?editors=1100 -->
     <!-- Filtering product form -->
-    <form class="filters">
+
+    <section class="product-filters flex">
 
       <h2>Filters</h2>
 
-      <div class="filter-options">
+      <span class="button-filters"><i class="fas fa-sliders-h"></i></span>
 
-        <fieldset>
-          <legend>Plant type :</legend>
-          <ul class="filter-list">
-            <li><input type="checkbox" name="type-filter" value="outdoor" id="filter-outdoor"> <label
-                for="filter-outdoor">Outdoor plants</label></li>
-            <li><input type="checkbox" name="type-filter" value="indoor" id="filter-indoor"> <label
-                for="filter-indoor">Indoor plants</label></li>
-            <li><input type="checkbox" name="type-filter" value="hanging" id="filter-hanging"> <label
-                for="filter-hanging">Hanging plants</label></li>
-          </ul>
-        </fieldset>
+    </section>
 
-        <fieldset>
-          <legend>Pot requirement :</legend>
-          <ul class="filter-list">
-            <li><input type="checkbox" name="req-filter" value="incl" id="filter-incl"> <label
-                for="filter-incl">Including Pot</label></li>
-            <li><input type="checkbox" name="req-filter" value="excl" id="filter-excl"> <label
-                for="filter-excl">Excluding Pot</label></li>
-          </ul>
-        </fieldset>
+    <section class="display-filters">
 
-        <fieldset>
-          <legend>Plant size :</legend>
-          <ol class="filter-list">
-            <li><input type="checkbox" name="size-filter" value="input-seed" id="filter-seed"> <label
-                for="filter-seed">Seedlings</label></li>
-            <li><input type="checkbox" name="size-filter" value="input-sapling" id="filter-sapling"> <label
-                for="filter-sapling">Sapling</label></li>
-            <li><input type="checkbox" name="size-filter" value="input-peak" id="filter-peak"> <label
-                for="filter-peak">Peak</label></li>
-          </ol>
-        </fieldset>
+      <form class="filters">
 
-        <fieldset>
-          <legend>Ratings (above)</legend>
-          <ol class="filter-list">
-            <li>
-              <input type="radio" name="rating" value="4" id="aboveFour">
-              <label for="aboveFour">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </label>
-            </li>
-            <li>
-              <input type="radio" name="rating" value="3" id="aboveThree">
-              <label for="aboveThree">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </label>
-            </li>
-            <li>
-              <input type="radio" name="rating" value="2" id="aboveTwo">
-              <label for="aboveTwo">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </label>
-            </li>
-            <li>
-              <input type="radio" name="rating" value="1" id="aboveOne">
-              <label for="aboveOne">
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-              </label>
-            </li>
-          </ol>
-        </fieldset>
+        <div class="filter-options">
 
-      </div>
+          <fieldset>
+            <legend>Plant type :</legend>
+            <ul class="filter-list">
+              <li><input type="checkbox" name="type-filter" value="outdoor" id="filter-outdoor"> <label
+                  for="filter-outdoor">Outdoor plants</label></li>
+              <li><input type="checkbox" name="type-filter" value="indoor" id="filter-indoor"> <label
+                  for="filter-indoor">Indoor plants</label></li>
+              <li><input type="checkbox" name="type-filter" value="hanging" id="filter-hanging"> <label
+                  for="filter-hanging">Hanging plants</label></li>
+            </ul>
+          </fieldset>
 
-      <fieldset>
-        <label for="sort">Sort by</label>
+          <fieldset>
+            <legend>Pot requirement :</legend>
+            <ul class="filter-list">
+              <li><input type="checkbox" name="req-filter" value="incl" id="filter-incl"> <label
+                  for="filter-incl">Including Pot</label></li>
+              <li><input type="checkbox" name="req-filter" value="excl" id="filter-excl"> <label
+                  for="filter-excl">Excluding Pot</label></li>
+            </ul>
+          </fieldset>
 
-        <select name="sort" id="sort">
+          <fieldset>
+            <legend>Plant size :</legend>
+            <ol class="filter-list">
+              <li><input type="checkbox" name="size-filter" value="input-seed" id="filter-seed"> <label
+                  for="filter-seed">Seedlings</label></li>
+              <li><input type="checkbox" name="size-filter" value="input-sapling" id="filter-sapling"> <label
+                  for="filter-sapling">Sapling</label></li>
+              <li><input type="checkbox" name="size-filter" value="input-peak" id="filter-peak"> <label
+                  for="filter-peak">Peak</label></li>
+            </ol>
+          </fieldset>
 
-          <option value="relevance">Relevance</option>
-          <option value="new-arrivals">Newest Arrivals</option>
-          <option value="high-to-low">Price, lowest to highest</option>
-          <option value="low-to-high">Price, highest to lowest</option>
+          <fieldset>
+            <legend>Ratings (above)</legend>
+            <ol class="filter-list">
+              <li>
+                <input type="radio" name="rating" value="4" id="aboveFour">
+                <label for="aboveFour">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="3" id="aboveThree">
+                <label for="aboveThree">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="2" id="aboveTwo">
+                <label for="aboveTwo">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </label>
+              </li>
+              <li>
+                <input type="radio" name="rating" value="1" id="aboveOne">
+                <label for="aboveOne">
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+                </label>
+              </li>
+            </ol>
+          </fieldset>
 
-        </select>
+          <fieldset>
+            <label for="sort">Sort by</label>
 
-      </fieldset>
+            <select name="sort" id="sort">
 
-    </form>
+              <option value="relevance">Relevance</option>
+              <option value="new-arrivals">Newest Arrivals</option>
+              <option value="high-to-low">Price, lowest to highest</option>
+              <option value="low-to-high">Price, highest to lowest</option>
+
+            </select>
+
+          </fieldset>
+
+        </div>
+
+      </form>
+
+    </section>
 
     <section class="results">
-      
+
       <h2 class="subheading">Here are the greenies -</h2>
 
       <!-- Product 1 -->
@@ -541,6 +560,8 @@
     </nav>
     <p class="copyright text-center">Copyright &copy; 2021 | Spruce</p>
   </footer>
+
+  <script src="js/script.js"></script>
 
 </body>
 

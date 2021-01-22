@@ -13,8 +13,42 @@
   font-size: 1.2rem;
 }
 
-.nav-toggle i {
+.menu-bar i {
   font-size: 1.5rem;
+}
+
+.side-bar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(107, 155, 107);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.side-bar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-bar a:hover {
+  color: #f1f1f1;
+}
+
+.side-bar .menu-close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 /* ---------------------------------------------------------------- */
 
@@ -43,6 +77,10 @@ font-weight: lighter;
 
 
 /* ------------------------ Section TRENDING ---------------------- */
+.trending {
+  overflow: hidden;
+}
+
 .trending-products img{
   height: 10rem;
   width: 10rem;
@@ -60,6 +98,18 @@ font-weight: lighter;
 
 
 /* ------------------------ Section FILTERS ----------------------- */
+.product-filters {
+  justify-content: start;
+}
+
+.filter-options {
+  display: none;
+}
+
+.fa-sliders-h {
+  margin-left: 0.5em;
+}
+
 .fa-star,
 .far fa-star,
 .fa-star-half-alt
@@ -72,7 +122,10 @@ font-weight: lighter;
 
 /* ------------------------ Section PRODUCTS ---------------------- */
 .product img {
+  height: 20rem;
+  width: 100%;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 /* ---------------------------------------------------------------- */
 
