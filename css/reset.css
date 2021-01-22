@@ -1,5 +1,6 @@
   /* -------------------------- Fonts Import ------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
   /* ---------------------------------------------------------------- */
 
 
@@ -7,6 +8,7 @@
   /* --------------------------- Fonts Used ------------------------- */
 :root {
     --main-font: 'Lato', sans-serif;
+    --cursive-font: 'Dancing Script', cursive;
     --pad-and-gap : 1em;
   }
   /* ---------------------------------------------------------------- */
@@ -42,6 +44,10 @@ p {
 	margin: 1rem 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -60,7 +66,11 @@ li > ul, li > ol {
 
 input, button {
 	margin: 0;
-	font: inherit;
+  font: inherit;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
 } 
 
 fieldset {

@@ -1,17 +1,125 @@
+/* ------------------------- Section HEADER ----------------------- */
 .page-header {
   justify-content: space-between;
+  height: 3em;
 }
 
+.logo {
+  font-family: var(--cursive-font);
+  font-size: 1.2rem;
+}
 
+.fa-search {
+  font-size: 1.2rem;
+}
+
+.nav-toggle i {
+  font-size: 1.5rem;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* -------------------------- Section HERO ------------------------ */
 .heading {
-    height: 30vh;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.171), 
-      rgba(0, 0, 0, 0.171)
-    ),url(./../img/hero.jpg);
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-  }
-  
+  height: 40vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.171), 
+    rgba(0, 0, 0, 0.171)
+  ),url(./../img/hero.jpg);
+  background-size: cover; 
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 8rem 0;
+}
+
+.heading h1 {
+font-family: var(--cursive-font);
+font-weight: lighter;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Section TRENDING ---------------------- */
+.trending-products img{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 1rem;
+  margin: 0 0.5rem;
+}
+
+.trending-products {
+  animation: carouselSlider 50s linear infinite;
+  display: flex;
+  width: calc(150px * 12);
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Section FILTERS ----------------------- */
+.fa-star,
+.far fa-star,
+.fa-star-half-alt
+ {
+  color: goldenrod;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Section PRODUCTS ---------------------- */
+.product img {
+  border-radius: 0.5rem;
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Section PRODUCTS ---------------------- */
+.fa-shopping-cart {
+  color: rgb(4, 90, 4);
+}
+.fa-heart {
+  color: maroon;
+}
+
+del {
+  color: maroon;
+}
+
+ins {
+  color: rgb(4, 90, 4);
+}
+/* ---------------------------------------------------------------- */
+
+
+
+/* ----------------------- Section PAGINATION --------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ----------------------- Section PAGINATION --------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ----------------------- Section SITE INFO ---------------------- */
+/* ---------------------------------------------------------------- */
+
+
+
+/* ------------------------ Section FOOTER ------------------------ */
+/* ---------------------------------------------------------------- */
+
+
+
+/* --------------------------- Keyframes -------------------------- */
+@keyframes carouselSlider {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-150px * 7))}
+}
+/* ---------------------------------------------------------------- */

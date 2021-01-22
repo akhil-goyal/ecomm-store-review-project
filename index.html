@@ -24,7 +24,7 @@
     </button>
 
     <a href="index.html" class="logo">
-      Spruce <img src="/img/logo.png" style="height: 2rem; width: 1.5rem;" alt="Spruce Logo">
+      Spruce <img src="img/logo.png" style="height: 2rem; width: 1.5rem;" alt="Spruce Logo">
     </a>
 
     <nav style="display: none;" aria-label="Primary" class="navigation">
@@ -61,11 +61,11 @@
     <!-- Search for a product (non-functional) -->
     <!-- <form class="search"> -->
 
-      <!-- <label>Search
+    <!-- <label>Search
         <input type="search" name="find" id="find">
       </label> -->
 
-      <button type="button"><i class="fas fa-search"></i></button>
+    <button type="button"><i class="fas fa-search"></i></button>
 
     <!-- </form> -->
 
@@ -74,8 +74,47 @@
   <main class="products">
 
     <header class="heading">
-      <h1>Exotic greens delivered to your doorstep.</h1>
+      <h1 class="container">Exotic greens delivered to your doorstep.</h1>
     </header>
+
+    <section class="trending">
+
+      <h2 class="subheading">What's blooming?</h2>
+
+      <header class="trending-products">
+        <article class="trending-product">
+          <img src="img/plant1.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant2.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant3.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant4.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant5.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant6.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant1.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant2.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant3.jpg" alt="Plant" />
+        </article>
+        <article class="trending-product">
+          <img src="img/plant4.jpg" alt="Plant" />
+        </article>
+      </header>
+
+    </section>
 
     <!-- CODEPEN (Rocco) : https://codepen.io/roccop/professor/dyprNyw?editors=1100 -->
     <!-- Filtering product form -->
@@ -169,11 +208,13 @@
 
       <fieldset>
         <label for="sort">Sort by</label>
+
         <select name="sort" id="sort">
 
-          <option value="price-high">Price, highest to lowest</option>
-          <option value="price-low">Price, lowest to highest</option>
-          <option value="newest">Date Added</option>
+          <option value="relevance">Relevance</option>
+          <option value="new-arrivals">Newest Arrivals</option>
+          <option value="high-to-low">Price, lowest to highest</option>
+          <option value="low-to-high">Price, highest to lowest</option>
 
         </select>
 
@@ -182,10 +223,11 @@
     </form>
 
     <section class="results">
-      <h2 class="subheading">Results</h2>
+      
+      <h2 class="subheading">Here are the greenies -</h2>
 
       <!-- Product 1 -->
-      <article class="product">
+      <article class="product container my-1">
         <header>
           <img src="img/plant1.jpg" alt="Silver Dollar Plant">
           <h3>Silver Dollar Plant</h3>
@@ -232,7 +274,7 @@
       </article>
 
       <!-- Product 2 -->
-      <article class="product">
+      <article class="product container my-1">
         <header>
           <img src="img/plant2.jpg" alt="String Of Pearls">
           <h3>String Of Pearls</h3>
@@ -280,7 +322,7 @@
       </article>
 
       <!-- Product 3 -->
-      <article class="product">
+      <article class="product container my-1">
         <header>
           <img src="img/plant3.jpg" alt="Peace Lily">
           <h3>Peace Lily</h3>
@@ -329,7 +371,7 @@
       </article>
 
       <!-- Product 4 -->
-      <article class="product">
+      <article class="product container my-1">
         <header>
           <img src="img/plant4.jpg" alt="Areca Palm">
           <h3>Areca Palm</h3>
@@ -377,7 +419,7 @@
       </article>
 
       <!-- Product 5 -->
-      <article class="product">
+      <article class="product container my-1">
         <header>
           <img src="img/plant5.jpg" alt="Grafted Ficus Bonsai">
           <h3>Grafted Ficus Bonsai</h3>
@@ -425,7 +467,7 @@
       </article>
 
       <!-- Product 6 -->
-      <article class="product">
+      <article class="product container my-1">
         <header>
           <img src="img/plant6.jpg" alt="Calathea Orbifolia">
           <h3>Calathea Orbifolia</h3>
@@ -497,7 +539,7 @@
         <li><a href="#">Accessibility Policy</a></li>
       </ul>
     </nav>
-    <p class="copyright">Copyright &copy; 2021 | Spruce</p>
+    <p class="copyright text-center">Copyright &copy; 2021 | Spruce</p>
   </footer>
 
 </body>
