@@ -4,17 +4,56 @@
   height: 3em;
 }
 
+.page-header-webview {
+  display: none;
+}
+
+.page-header-webview a {
+  color: rgb(18, 61, 18);
+}
+
+.header-webview-nav a{
+  font-weight: bold;
+}
+
 .logo {
   font-family: var(--cursive-font);
   font-size: 1.2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 2em;
+  width: 1.7em;
 }
 
 .fa-search {
   font-size: 1.2rem;
 }
 
+.product-search {
+  margin-top: 1em;
+}
+
+.search-box input {
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 0.5em;
+  width: 60%;
+  padding-left: 1em;
+}
+
 .menu-bar i {
   font-size: 1.5rem;
+}
+
+.user-image {
+  height: 1.5em;
+  width: 1.6em;
+  border-radius: 1em;
 }
 
 .side-bar {
@@ -117,13 +156,23 @@ font-weight: lighter;
 .trending-products {
   animation: carouselSlider 50s linear infinite;
   display: flex;
-  width: calc(150px * 12);
+  width: calc(150px * 16);
+}
+
+.trending-product {
+  display: block;
 }
 /* ---------------------------------------------------------------- */
 
 
 
 /* ---------------------- Section HIGHLIGHTS ---------------------- */
+.highlights .grid{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
 .highlight-1 {
   height: 40vh;
   background: linear-gradient(
@@ -148,7 +197,6 @@ font-weight: lighter;
   border-radius: 1rem;
   color: #fff;
   padding: 7rem;
-  margin-top: 1rem;
 }
 
 .highlight-3 {
@@ -162,7 +210,6 @@ font-weight: lighter;
   border-radius: 1rem;
   color: #fff;
   padding: 7rem;
-  margin-top: 1rem;
 }
 /* ---------------------------------------------------------------- */
 
@@ -175,6 +222,10 @@ font-weight: lighter;
 
 .filter-options {
   display: none;
+}
+
+.button-filters {
+  cursor: pointer;
 }
 
 .filter-plant-types input,
@@ -229,6 +280,16 @@ font-weight: lighter;
 /* ------------------------ Section PRODUCTS ---------------------- */
 .product {
   border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.results .grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.results fieldset {
+  margin-top: 1rem;
 }
 
 .product img {
@@ -305,6 +366,10 @@ ins {
   border-radius: 4px;
   padding: 2px 5px;
   color: #fff;
+}
+
+.results .grid{
+  gap: 0em;
 }
 /* ---------------------------------------------------------------- */
 

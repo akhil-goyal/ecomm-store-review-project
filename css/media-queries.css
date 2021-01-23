@@ -1,0 +1,361 @@
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    /* HEADER */
+    .page-header {
+        height: 4em;
+    }
+    
+    .logo {
+        font-family: var(--cursive-font);
+        font-size: 1.8em;
+    }
+
+    .logo-container img {
+        height: 2.4em;
+        width: 1.8em;
+    }
+      
+
+    /* HERO */
+    .heading {
+        height: 40vh;
+        display: grid;
+        align-items: center;
+    }
+
+    .heading h1 {
+        font-size: 2.5em;
+    }
+
+    /* TRENDING */
+    section {
+        margin-top: 1em;
+    }
+
+    .trending-products img{
+        height: 12em;
+        width: 12em;
+    }
+
+    .trending-products {
+        width: calc(250px * 16);
+    }
+
+    /* HIGHLIGHTS */
+    .highlight-1,
+    .highlight-2,
+    .highlight-3
+    {
+        height: 40vh;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .highlights .grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    }
+
+    /* SEARCH BAR */
+    .search-box input {
+        width: 30%;
+    }
+
+    /* PRODUCTS */
+    .product img {
+        height: 20em;
+    }
+
+    .results .grid {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    /* PAGINATION */
+    .buttons-prev-next {
+        justify-content: center;
+    }
+
+    .buttons-prev-next a {
+        margin: 1em;
+    }
+
+    /* FOOTER */
+    .legal > li {
+        padding: 0 0.7em;
+    }
+
+    .subheading {
+        font-size: 2em;
+    }
+
+    legend,
+    .label-sort
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .label-sort{
+        padding-right: 0.4em;
+    }
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+    .page-header {
+        display: none;
+    }
+
+    .page-header-webview {
+        display: flex;
+        justify-content: space-between;
+        height: 4em;
+    }
+
+    .page-header-webview ul > li {
+        padding: 0 2em;
+    }
+
+    .page-header-webview .logo,
+    .page-header-webview .user-settings
+    {
+        align-self: center;
+    }
+
+    .page-header-webview .logo {
+        font-size: 1.7em;
+    }
+
+    .logo-container img {
+        height: 2.7em;
+        width: 2em;
+    }
+
+    .user-image {
+        height: 1.9em;
+        width: 2em;
+    }
+
+    /* HERO */
+    .heading {
+        height: 40vh;
+        display: grid;
+        align-items: center;
+    }
+
+    .heading h1 {
+        font-size: 2.2em;
+    }
+
+    /* TRENDING */
+    section {
+        margin-top: 2em;
+    }
+
+    .trending-products img{
+        height: 15em;
+        width: 15em;
+    }
+
+    .trending-products {
+        width: calc(250px * 16);
+    }
+
+    .subheading {
+        font-size: 1.7em;
+    }
+
+    /* HIGHLIGHTS */
+    .highlight-1,
+    .highlight-2,
+    .highlight-3
+    {
+        height: 20em;
+        display: grid;
+        align-content: center;
+    }
+
+    .highlights .grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+
+    /* SEARCH BAR */
+    .search-box input {
+        width: 30%;
+    }
+
+    /* PRODUCTS */
+    .product img {
+        height: 20em;
+    }
+
+    /* PAGINATION */
+    .buttons-prev-next {
+        justify-content: center;
+    }
+
+    .buttons-prev-next a {
+        margin: 1em;
+    }
+
+    /* FOOTER */
+    .legal > li {
+        padding: 0 0.8em;
+    }
+
+    legend,
+    .label-sort
+    {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .label-sort{
+        padding-right: 0.3em;
+    }
+
+    .results .grid {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+
+
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .results .grid {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+
+    .page-header {
+        display: none;
+    }
+
+    .page-header-webview {
+        display: flex;
+        justify-content: space-between;
+        height: 5em;
+    }
+
+    .page-header-webview ul > li {
+        padding: 0 3em;
+    }
+
+    .page-header-webview .logo,
+    .page-header-webview .user-settings
+    {
+        align-self: center;
+    }
+
+    .page-header-webview .logo {
+        font-size: 2em;
+    }
+
+    .logo-container img {
+        height: 3em;
+        width: 2.3em;
+    }
+
+    .user-image {
+        height: 2em;
+        width: 2.1em;
+    }
+
+    /* HERO */
+    .heading {
+        height: 40vh;
+        display: grid;
+        align-items: center;
+    }
+
+    .heading h1 {
+        font-size: 4em;
+    }
+
+    /* TRENDING */
+    section {
+        margin-top: 2em;
+    }
+
+    .trending-products img{
+        height: 20em;
+        width: 20em;
+    }
+
+    .trending-products {
+        width: calc(250px * 16);
+    }
+
+    .subheading {
+        font-size: 2em;
+    }
+
+    /* HIGHLIGHTS */
+    .highlight-1,
+    .highlight-2,
+    .highlight-3
+    {
+        height: 50vh;
+        display: grid;
+        align-content: center;
+    }
+
+    .highlights .grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+
+    /* SEARCH BAR */
+    .search-box input {
+        width: 20%;
+    }
+
+    /* PRODUCTS */
+    .product img {
+        height: 35em;
+    }
+
+    /* PAGINATION */
+    .buttons-prev-next {
+        justify-content: center;
+    }
+
+    .buttons-prev-next a {
+        margin: 1em;
+    }
+
+    /* FOOTER */
+    .legal > li {
+        padding: 0 1rem;
+    }
+
+    legend,
+    .label-sort
+    {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .label-sort{
+        padding-right: 0.4em;
+    }
+
+}

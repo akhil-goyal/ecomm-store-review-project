@@ -11,6 +11,7 @@
   <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media-queries.css">
   <script src="https://kit.fontawesome.com/ba2f0fa843.js" crossorigin="anonymous"></script>
 
 </head>
@@ -31,6 +32,8 @@
 
     <nav aria-label="Primary" class="navigation">
 
+      </form>
+
       <ul class="menu">
 
         <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
@@ -38,6 +41,8 @@
         <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
         <hr class="separator">
         <li><a href="#"><i class="fas fa-images"></i> Gallery</a></li>
+        <hr class="separator">
+        <li><a href="#"><i class="fas fa-user tie"></i> User Profile</a></li>
         <hr class="separator">
         <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>
         <hr class="separator">
@@ -64,22 +69,45 @@
       <i class="fas fa-bars"></i>
     </button>
 
-    <a href="index.html" class="logo">
-      Spruce <img src="img/logo.png" style="height: 2rem; width: 1.5rem;" alt="Spruce Logo">
-    </a>
+    <!-- <a href="index.html" class="logo">
+      Spruce <img src="img/logo.png" alt="Spruce Logo">
+    </a> -->
 
-    <!-- Search for a product (non-functional) -->
-    <!-- <form class="search"> -->
+    <div class="logo-container">
+      <a href="index.html" class="logo">Spruce</a>
+      <img src="img/logo.png" alt="Site Logo">
+    </div>
 
-    <!-- <label>Search
-        <input type="search" name="find" id="find">
-      </label> -->
-
-    <button class="button-search" type="button"><i class="fas fa-search"></i></button>
-
-    <!-- </form> -->
+    <span class="user-settings"><img class="user-image" src="img/user.jpg" alt=""></button>
+    </span>
 
   </header>
+
+  <div class="page-header-webview container">
+
+    <div class="logo-container">
+      <a href="index.html" class="logo">Spruce</a>
+      <img src="img/logo.png" alt="Site Logo">
+    </div>
+
+    <!-- <a href="index.html" class="logo">
+      Spruce <img src="img/logo.png" style="height: 2rem; width: 1.5rem;" alt="Spruce Logo">
+    </a> -->
+
+    <nav class="header-webview-nav">
+      <ul class="flex">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <span class="user-settings"><img class="user-image" src="img/user.jpg" alt=""></button>
+    </span>
+
+  </div>
 
   <main class="products">
 
@@ -92,35 +120,45 @@
       <h2 class="subheading">What's blooming?</h2>
 
       <header class="trending-products">
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant1.jpg" alt="Plant" />
+          <p class="text-center">Plant 1</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant2.jpg" alt="Plant" />
+          <p class="text-center">Plant 2</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant3.jpg" alt="Plant" />
+          <p class="text-center">Plant 3</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant4.jpg" alt="Plant" />
+          <p class="text-center">Plant 4</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant5.jpg" alt="Plant" />
+          <p class="text-center">Plant 5</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant6.jpg" alt="Plant" />
+          <p class="text-center">Plant 6</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant1.jpg" alt="Plant" />
+          <p class="text-center">Plant 7</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant2.jpg" alt="Plant" />
+          <p class="text-center">Plant 8</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant3.jpg" alt="Plant" />
+          <p class="text-center">Plant 9</p>
         </article>
-        <article class="trending-product">
+        <article class="trending-product flex">
           <img src="img/plant4.jpg" alt="Plant" />
+          <p class="text-center">Plant 10</p>
         </article>
       </header>
 
@@ -128,23 +166,26 @@
 
     <section class="highlights">
 
-      <h2>Why Choose Us?</h2>
+      <h2 class="subheading">Why Spruce?</h2>
 
-      <div class="highlight-1">
-        <p>We believe in nurturing the plants from seed to bead.</p>
-      </div>
+      <div class="grid">
 
-      <div class="highlight-2">
-        <p>Our expert botanists keep a check on well being of all our tiny groots.</p>
-      </div>
+        <div class="highlight-1">
+          <p>We believe in nurturing the plants from seed to bead.</p>
+        </div>
 
-      <div class="highlight-3">
-        <p>We provide our little friends with the best of manure & pretty sunlight.</p>
+        <div class="highlight-2">
+          <p>Our expert botanists keep a check on well being of all our tiny groots.</p>
+        </div>
+
+        <div class="highlight-3">
+          <p>We provide our little friends with the best of manure & pretty sunlight.</p>
+        </div>
+
       </div>
 
     </section>
 
-    <!-- CODEPEN (Rocco) : https://codepen.io/roccop/professor/dyprNyw?editors=1100 -->
     <!-- Filtering product form -->
 
     <section class="product-filters flex">
@@ -277,7 +318,7 @@
 
           <fieldset>
 
-            <label for="sort">Sort by</label>
+            <label class="label-sort" for="sort">Sort by</label>
 
             <select name="sort" id="sort">
 
@@ -296,615 +337,610 @@
 
     </section>
 
+    <section class="product-search">
+
+      <div class="search-box">
+        <input class="search-bar" type="text" placeholder="Search for exotic plants" name="search" class="search">
+        <button class="button-search">
+          <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+          <!-- <i class="fas fa-search"></i> -->
+        </button>
+      </div>
+
+
+    </section>
+
     <section class="results">
 
       <h2 class="subheading">Here are the greenies -</h2>
 
-      <!-- Product 1 -->
-      <article class="product container my-1">
+      <!-- <div class="grid grid-1 grid-row-gap"> -->
+      <div class="grid products-list">
 
-        <header>
+        <!-- Product 1 -->
+        <article class="product container my-1">
 
-          <img src="img/plant1.jpg" alt="Silver Dollar Plant">
+          <header>
 
-          <div class="product-title-icons flex">
+            <img src="img/plant1.jpg" alt="Silver Dollar Plant">
 
-            <h3>Silver Dollar Plant</h3>
+            <div class="product-title-icons flex">
 
-            <div class="flex">
-              <button type="button"><i class="fas fa-shopping-cart"></i></button>
-              <button type="button"><i class="fas fa-heart"></i></button>
+              <h3>Silver Dollar Plant</h3>
+
+              <div class="flex">
+                <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                <button type="button"><i class="fas fa-heart"></i></button>
+              </div>
+
             </div>
 
-          </div>
+            <div class="product-price-ratings flex">
 
-          <div class="product-price-ratings flex">
+              <data value="40"><del>$50.00</del> <ins>$40.00</ins></data>
 
-            <data value="40"><del>$50.00</del> <ins>$40.00</ins></data>
+              <dl>
+                <dd>4.5
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </dd>
+              </dl>
 
-            <dl>
-              <dd>4.5
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </dd>
-            </dl>
-
-          </div>
-
-          <p>
-            If you’re looking for drought-tolerant plants, succulents like the Xerosicyos danguyi are fantastic,
-            but it helps to get a container with good drainage like these ceramic and bamboo planters.
-            Xerosicyos are actually a climbing succulent so be prepared to leave a little headroom wherever you
-            display them! A space with direct sunlight is best. <a href="#">View details</a>
-          </p>
-
-        </header>
-
-        <form>
-
-          <fieldset>
-
-            <legend>Pot requirement :</legend>
-
-            <ul class="pot-fields">
-
-              <li>
-                <input id="pot-1" type="radio" name="pot-requirement" value="req">
-                <label for="pot-1">Required</label>
-              </li>
-
-              <li>
-                <input id="pot-2" type="radio" name="pot-requirement" value="not-req">
-                <label for="pot-2">Not required</label>
-              </li>
-
-            </ul>
-
-          </fieldset>
-
-          <fieldset class="my-1">
-
-            <legend>Plant Size :</legend>
-
-            <ol class="size-fields">
-
-              <li>
-                <input id="size-1" type="radio" name="plant-size" value="seed">
-                <label for="size-1">Seedlings</label>
-              </li>
-
-              <li>
-                <input id="size-2" type="radio" name="plant-size" value="sapling">
-                <label for="size-2">Sapling</label>
-              </li>
-
-              <li>
-                <input id="size-3" type="radio" name="plant-size" value="peak">
-                <label for="size-3">Peak</label>
-              </li>
-
-            </ol>
-
-          </fieldset>
-
-          <fieldset>
-
-            <button class="button-buy my-1">Buy Now</button>
-
-          </fieldset>
-
-        </form>
-
-      </article>
-
-      <!-- Product 2 -->
-      <article class="product container my-1">
-
-        <header>
-
-          <img src="img/plant2.jpg" alt="String Of Pearls">
-
-          <div class="product-title-icons flex">
-
-            <h3>String Of Pearls</h3>
-
-            <div class="flex">
-              <button type="button"><i class="fas fa-shopping-cart"></i></button>
-              <button type="button"><i class="fas fa-heart"></i></button>
             </div>
 
-          </div>
+            <p>
+              If you’re looking for drought-tolerant plants, succulents like the Xerosicyos da <a
+                href="#">View details</a>
+            </p>
 
-          <div class="product-price-ratings flex">
+          </header>
 
-            <data value="40"><del>$85.00</del> <ins>$70.00</ins></data>
+          <form>
 
-            <dl>
-              <dd>5
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </dd>
-            </dl>
+            <fieldset>
 
-          </div>
+              <legend>Pot requirement :</legend>
 
-          <p>
-            What a unique houseplant! Guests are sure to comment on the grace of your beautiful Senecio
-            rowleyanus as its delicate tendrils of round beads overflow its planter. These are great for
-            hanging or draping over a pedestal, preferably in a location just out of the reach of direct
-            sunlight. Plant in loose cactus soil and be careful to avoid overwatering for best results. <a href="#">View
-              details</a>
-          </p>
+              <ul class="pot-fields">
 
-        </header>
+                <li>
+                  <input id="pot1-req" type="radio" name="pot-requirement" value="req">
+                  <label for="pot1-req">Required</label>
+                </li>
 
-        <form>
+                <li>
+                  <input id="pot1-not-req" type="radio" name="pot-requirement" value="not-req">
+                  <label for="pot1-not-req">Not required</label>
+                </li>
 
-          <fieldset>
+              </ul>
 
-            <legend>Pot requirement :</legend>
+            </fieldset>
 
-            <ul class="pot-fields">
+            <fieldset class="my-1">
 
-              <li>
-                <input id="pot-1" type="radio" name="pot-requirement" value="req">
-                <label for="pot-1">Required</label>
-              </li>
+              <legend>Plant Size :</legend>
 
-              <li>
-                <input id="pot-2" type="radio" name="pot-requirement" value="not-req">
-                <label for="pot-2">Not required</label>
-              </li>
+              <ol class="size-fields">
 
-            </ul>
+                <li>
+                  <input id="pot1-size-1" type="radio" name="plant-size" value="seed">
+                  <label for="pot1-size-1">Seedlings</label>
+                </li>
 
-          </fieldset>
+                <li>
+                  <input id="pot1-size-2" type="radio" name="plant-size" value="sapling">
+                  <label for="pot1-size-2">Sapling</label>
+                </li>
 
-          <fieldset class="my-1">
+                <li>
+                  <input id="pot1-size-3" type="radio" name="plant-size" value="peak">
+                  <label for="pot1-size-3">Peak</label>
+                </li>
 
-            <legend>Plant Size :</legend>
+              </ol>
 
-            <ol class="size-fields">
+            </fieldset>
 
-              <li>
-                <input id="size-1" type="radio" name="plant-size" value="seed">
-                <label for="size-1">Seedlings</label>
-              </li>
+            <fieldset>
 
-              <li>
-                <input id="size-2" type="radio" name="plant-size" value="sapling">
-                <label for="size-2">Sapling</label>
-              </li>
+              <button class="button-buy my-1">Buy Now</button>
 
-              <li>
-                <input id="size-3" type="radio" name="plant-size" value="peak">
-                <label for="size-3">Peak</label>
-              </li>
+            </fieldset>
 
-            </ol>
+          </form>
 
-          </fieldset>
+        </article>
 
-          <fieldset>
+        <!-- Product 2 -->
+        <article class="product container my-1">
 
-            <button class="button-buy my-1">Buy Now</button>
+          <header>
 
-          </fieldset>
+            <img src="img/plant2.jpg" alt="String Of Pearls">
 
-        </form>
+            <div class="product-title-icons flex">
 
-      </article>
+              <h3>String Of Pearls</h3>
 
-      <!-- Product 3 -->
-      <article class="product container my-1">
+              <div class="flex">
+                <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                <button type="button"><i class="fas fa-heart"></i></button>
+              </div>
 
-        <header>
-
-          <img src="img/plant3.jpg" alt="Peace Lily">
-
-          <div class="product-title-icons flex">
-
-            <h3>Peace Lily</h3>
-
-            <div class="flex">
-              <button type="button"><i class="fas fa-shopping-cart"></i></button>
-              <button type="button"><i class="fas fa-heart"></i></button>
             </div>
 
-          </div>
+            <div class="product-price-ratings flex">
 
-          <div class="product-price-ratings flex">
+              <data value="40"><del>$85.00</del> <ins>$70.00</ins></data>
 
-            <data value="40"><del>$33.00</del> <ins>$25.00</ins></data>
+              <dl>
+                <dd>5.0
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </dd>
+              </dl>
 
-            <dl>
-              <dd>4
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </dd>
-            </dl>
-
-          </div>
-
-          <p>
-            Sometimes flowering plants prove the most challenging to keep healthy, but certain lilies in
-            the Spathiphyllum genus (the peace lily family) are on the more easygoing side. Peace lilies
-            are forgiving plants but seem to do best in indirect sunlight with access to shade. Wait to
-            water the plant until you notice a bit of drooping in the leaves for best results. These plants
-            need reliable drainage. Consider planting in a simple pot to let the beautiful flowers take
-            center stage. <a href="#">View details</a>
-          </p>
-
-        </header>
-
-        <form>
-
-          <fieldset>
-
-            <legend>Pot requirement :</legend>
-
-            <ul class="pot-fields">
-
-              <li>
-                <input id="pot-1" type="radio" name="pot-requirement" value="req">
-                <label for="pot-1">Required</label>
-              </li>
-
-              <li>
-                <input id="pot-2" type="radio" name="pot-requirement" value="not-req">
-                <label for="pot-2">Not required</label>
-              </li>
-
-            </ul>
-
-          </fieldset>
-
-          <fieldset class="my-1">
-
-            <legend>Plant Size :</legend>
-
-            <ol class="size-fields">
-
-              <li>
-                <input id="size-1" type="radio" name="plant-size" value="seed">
-                <label for="size-1">Seedlings</label>
-              </li>
-
-              <li>
-                <input id="size-2" type="radio" name="plant-size" value="sapling">
-                <label for="size-2">Sapling</label>
-              </li>
-
-              <li>
-                <input id="size-3" type="radio" name="plant-size" value="peak">
-                <label for="size-3">Peak</label>
-              </li>
-
-            </ol>
-
-          </fieldset>
-
-          <fieldset>
-
-            <button class="button-buy my-1">Buy Now</button>
-
-          </fieldset>
-
-        </form>
-
-      </article>
-
-      <!-- Product 4 -->
-      <article class="product container my-1">
-
-        <header>
-
-          <img src="img/plant4.jpg" alt="Areca Palm">
-
-          <div class="product-title-icons flex">
-
-            <h3>Areca Palm</h3>
-
-            <div class="flex">
-              <button type="button"><i class="fas fa-shopping-cart"></i></button>
-              <button type="button"><i class="fas fa-heart"></i></button>
             </div>
 
-          </div>
+            <p>
+              What a unique houseplant! Guests are sure to comment on the grace <a href="#">View details</a>
+            </p>
 
-          <div class="product-price-ratings flex">
+          </header>
 
-            <data value="40"><del>$76.00</del> <ins>$60.00</ins></data>
+          <form>
 
-            <dl>
-              <dd>3.5
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-              </dd>
-            </dl>
+            <fieldset>
 
-          </div>
+              <legend>Pot requirement :</legend>
 
-          <p>
-            Dypsis lutescens, commonly known as golden cane palm or areca palm, makes a lovely focal point
-            with its height and playful fronds. These plants enjoy indirect sunlight or partial shade, preferably
-            in a well-drained planter filled with loamy soil. If you tend to overwater plants, this species
-            will prove rather forgiving. Keep the soil moist but avoid muddiness. A little nibbling won’t hurt
-            cats or dogs so pet owners can rest easily with this one. <a href="#">View details</a>
-          </p>
+              <ul class="pot-fields">
 
-        </header>
+                <li>
+                  <input id="pot2-req" type="radio" name="pot-requirement" value="req">
+                  <label for="pot2-req">Required</label>
+                </li>
 
-        <form>
+                <li>
+                  <input id="pot2-not-req" type="radio" name="pot-requirement" value="not-req">
+                  <label for="pot2-not-req">Not required</label>
+                </li>
 
-          <fieldset>
+              </ul>
 
-            <legend>Pot requirement :</legend>
+            </fieldset>
 
-            <ul class="pot-fields">
+            <fieldset class="my-1">
 
-              <li>
-                <input id="pot-1" type="radio" name="pot-requirement" value="req">
-                <label for="pot-1">Required</label>
-              </li>
+              <legend>Plant Size :</legend>
 
-              <li>
-                <input id="pot-2" type="radio" name="pot-requirement" value="not-req">
-                <label for="pot-2">Not required</label>
-              </li>
+              <ol class="size-fields">
 
-            </ul>
+                <li>
+                  <input id="pot2-size-1" type="radio" name="plant-size" value="seed">
+                  <label for="pot2-size-1">Seedlings</label>
+                </li>
 
-          </fieldset>
+                <li>
+                  <input id="pot2-size-2" type="radio" name="plant-size" value="sapling">
+                  <label for="pot2-size-2">Sapling</label>
+                </li>
 
-          <fieldset class="my-1">
+                <li>
+                  <input id="pot2-size-3" type="radio" name="plant-size" value="peak">
+                  <label for="pot2-size-3">Peak</label>
+                </li>
 
-            <legend>Plant Size :</legend>
+              </ol>
 
-            <ol class="size-fields">
+            </fieldset>
 
-              <li>
-                <input id="size-1" type="radio" name="plant-size" value="seed">
-                <label for="size-1">Seedlings</label>
-              </li>
+            <fieldset>
 
-              <li>
-                <input id="size-2" type="radio" name="plant-size" value="sapling">
-                <label for="size-2">Sapling</label>
-              </li>
+              <button class="button-buy my-1">Buy Now</button>
 
-              <li>
-                <input id="size-3" type="radio" name="plant-size" value="peak">
-                <label for="size-3">Peak</label>
-              </li>
+            </fieldset>
 
-            </ol>
+          </form>
 
-          </fieldset>
+        </article>
 
-          <fieldset>
+        <!-- Product 3 -->
+        <article class="product container my-1">
 
-            <button class="button-buy my-1">Buy Now</button>
+          <header>
 
-          </fieldset>
+            <img src="img/plant3.jpg" alt="Peace Lily">
 
-        </form>
+            <div class="product-title-icons flex">
 
-      </article>
+              <h3>Peace Lily</h3>
 
-      <!-- Product 5 -->
-      <article class="product container my-1">
+              <div class="flex">
+                <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                <button type="button"><i class="fas fa-heart"></i></button>
+              </div>
 
-        <header>
-
-          <img src="img/plant5.jpg" alt="Grafted Ficus Bonsai">
-
-          <div class="product-title-icons flex">
-
-            <h3>Grafted Ficus Bonsai</h3>
-
-            <div class="flex">
-              <button type="button"><i class="fas fa-shopping-cart"></i></button>
-              <button type="button"><i class="fas fa-heart"></i></button>
             </div>
 
-          </div>
+            <div class="product-price-ratings flex">
 
-          <div class="product-price-ratings flex">
+              <data value="40"><del>$33.00</del> <ins>$25.00</ins></data>
 
-            <data value="40"><del>$24.00</del> <ins>$20.00</ins></data>
+              <dl>
+                <dd>4.0
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </dd>
+              </dl>
 
-            <dl>
-              <dd>4
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </dd>
-            </dl>
-
-          </div>
-
-          <p>
-            Are you looking for a small desk plant sure to spark conversation? Ficus microcarpa “Ginseng”
-            definitely has a very distinctive look to it. These plants are extremely forgiving, easily
-            tolerating conditions ranging from low to bright light (but not direct sunlight) and can live
-            through irregular watering for the most part. They are a wonderful addition to any office environment. <a
-              href="#">View details</a>
-          </p>
-
-        </header>
-
-        <form>
-
-          <fieldset>
-
-            <legend>Pot requirement :</legend>
-
-            <ul class="pot-fields">
-
-              <li>
-                <input id="pot-1" type="radio" name="pot-requirement" value="req">
-                <label for="pot-1">Required</label>
-              </li>
-
-              <li>
-                <input id="pot-2" type="radio" name="pot-requirement" value="not-req">
-                <label for="pot-2">Not required</label>
-              </li>
-
-            </ul>
-
-          </fieldset>
-
-          <fieldset class="my-1">
-
-            <legend>Plant Size :</legend>
-
-            <ol class="size-fields">
-
-              <li>
-                <input id="size-1" type="radio" name="plant-size" value="seed">
-                <label for="size-1">Seedlings</label>
-              </li>
-
-              <li>
-                <input id="size-2" type="radio" name="plant-size" value="sapling">
-                <label for="size-2">Sapling</label>
-              </li>
-
-              <li>
-                <input id="size-3" type="radio" name="plant-size" value="peak">
-                <label for="size-3">Peak</label>
-              </li>
-
-            </ol>
-
-          </fieldset>
-
-          <fieldset>
-
-            <button class="button-buy my-1">Buy Now</button>
-
-          </fieldset>
-
-        </form>
-
-      </article>
-
-      <!-- Product 6 -->
-      <article class="product container my-1">
-
-        <header>
-
-          <img src="img/plant6.jpg" alt="Calathea Orbifolia">
-
-          <div class="product-title-icons flex">
-
-            <h3>Calathea Orbifolia</h3>
-
-            <div class="flex">
-              <button type="button"><i class="fas fa-shopping-cart"></i></button>
-              <button type="button"><i class="fas fa-heart"></i></button>
             </div>
 
-          </div>
+            <p>
+              Sometimes flowering plants prove the most challenging to keep healthy, but certa <a href="#">View details</a>
+            </p>
 
-          <div class="product-price-ratings flex">
+          </header>
 
-            <data value="40"><del>$67.00</del> <ins>$50.00</ins></data>
+          <form>
 
-            <dl>
-              <dd>4.5
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-              </dd>
-            </dl>
+            <fieldset>
 
-          </div>
+              <legend>Pot requirement :</legend>
 
-          <p>
-            Smooth streaks of white stand out against the vivid green leaves of the Calathea orbifolia,
-            like a living painting. These plants are a little tricky to care for compared to some of the
-            others on the list, but the key is to stay calm and make adjustments slowly. Moist soil, good
-            drainage, and low but reliable lighting conditions are a great place to start. <a href="#">View details</a>
-          </p>
+              <ul class="pot-fields">
 
-        </header>
+                <li>
+                  <input id="pot3-req" type="radio" name="pot-requirement" value="req">
+                  <label for="pot3-req">Required</label>
+                </li>
 
-        <form>
+                <li>
+                  <input id="pot3-not-req" type="radio" name="pot-requirement" value="not-req">
+                  <label for="pot3-not-req">Not required</label>
+                </li>
 
-          <fieldset>
+              </ul>
 
-            <legend>Pot requirement :</legend>
+            </fieldset>
 
-            <ul class="pot-fields">
+            <fieldset class="my-1">
 
-              <li>
-                <input id="pot-1" type="radio" name="pot-requirement" value="req">
-                <label for="pot-1">Required</label>
-              </li>
+              <legend>Plant Size :</legend>
 
-              <li>
-                <input id="pot-2" type="radio" name="pot-requirement" value="not-req">
-                <label for="pot-2">Not required</label>
-              </li>
+              <ol class="size-fields">
 
-            </ul>
+                <li>
+                  <input id="pot3-size-1" type="radio" name="plant-size" value="seed">
+                  <label for="pot3-size-1">Seedlings</label>
+                </li>
 
-          </fieldset>
+                <li>
+                  <input id="pot3-size-2" type="radio" name="plant-size" value="sapling">
+                  <label for="pot3-size-2">Sapling</label>
+                </li>
 
-          <fieldset class="my-1">
+                <li>
+                  <input id="pot3-size-3" type="radio" name="plant-size" value="peak">
+                  <label for="pot3-size-3">Peak</label>
+                </li>
 
-            <legend>Plant Size :</legend>
+              </ol>
 
-            <ol class="size-fields">
+            </fieldset>
 
-              <li>
-                <input id="size-1" type="radio" name="plant-size" value="seed">
-                <label for="size-1">Seedlings</label>
-              </li>
+            <fieldset>
 
-              <li>
-                <input id="size-2" type="radio" name="plant-size" value="sapling">
-                <label for="size-2">Sapling</label>
-              </li>
+              <button class="button-buy my-1">Buy Now</button>
 
-              <li>
-                <input id="size-3" type="radio" name="plant-size" value="peak">
-                <label for="size-3">Peak</label>
-              </li>
+            </fieldset>
 
-            </ol>
+          </form>
 
-          </fieldset>
+        </article>
 
-          <fieldset>
+        <!-- Product 4 -->
+        <article class="product container my-1">
 
-            <button class="button-buy my-1">Buy Now</button>
+          <header>
 
-          </fieldset>
+            <img src="img/plant4.jpg" alt="Areca Palm">
 
-        </form>
+            <div class="product-title-icons flex">
 
-      </article>
+              <h3>Areca Palm</h3>
 
+              <div class="flex">
+                <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                <button type="button"><i class="fas fa-heart"></i></button>
+              </div>
+
+            </div>
+
+            <div class="product-price-ratings flex">
+
+              <data value="40"><del>$76.00</del> <ins>$60.00</ins></data>
+
+              <dl>
+                <dd>3.5
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                  <i class="far fa-star"></i>
+                </dd>
+              </dl>
+
+            </div>
+
+            <p>
+              Dypsis lutescens, commonly known as golden cane palm or areca palm, makes a love <a href="#">View details</a>
+            </p>
+
+          </header>
+
+          <form>
+
+            <fieldset>
+
+              <legend>Pot requirement :</legend>
+
+              <ul class="pot-fields">
+
+                <li>
+                  <input id="pot4-req" type="radio" name="pot-requirement" value="req">
+                  <label for="pot4-req">Required</label>
+                </li>
+
+                <li>
+                  <input id="pot4-not-req" type="radio" name="pot-requirement" value="not-req">
+                  <label for="pot4-not-req">Not required</label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <fieldset class="my-1">
+
+              <legend>Plant Size :</legend>
+
+              <ol class="size-fields">
+
+                <li>
+                  <input id="pot4-size-1" type="radio" name="plant-size" value="seed">
+                  <label for="pot4-size-1">Seedlings</label>
+                </li>
+
+                <li>
+                  <input id="pot4-size-2" type="radio" name="plant-size" value="sapling">
+                  <label for="pot4-size-2">Sapling</label>
+                </li>
+
+                <li>
+                  <input id="pot4-size-3" type="radio" name="plant-size" value="peak">
+                  <label for="pot4-size-3">Peak</label>
+                </li>
+
+              </ol>
+
+            </fieldset>
+
+            <fieldset>
+
+              <button class="button-buy my-1">Buy Now</button>
+
+            </fieldset>
+
+          </form>
+
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product container my-1">
+
+          <header>
+
+            <img src="img/plant5.jpg" alt="Grafted Ficus Bonsai">
+
+            <div class="product-title-icons flex">
+
+              <h3>Grafted Ficus Bonsai</h3>
+
+              <div class="flex">
+                <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                <button type="button"><i class="fas fa-heart"></i></button>
+              </div>
+
+            </div>
+
+            <div class="product-price-ratings flex">
+
+              <data value="40"><del>$24.00</del> <ins>$20.00</ins></data>
+
+              <dl>
+                <dd>4.0
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </dd>
+              </dl>
+
+            </div>
+
+            <p>
+              Are you looking for a small desk plant sure to spark conversation? Ficus microca <a href="#">View details</a>
+            </p>
+
+          </header>
+
+          <form>
+
+            <fieldset>
+
+              <legend>Pot requirement :</legend>
+
+              <ul class="pot-fields">
+
+                <li>
+                  <input id="pot5-req" type="radio" name="pot-requirement" value="req">
+                  <label for="pot5-req">Required</label>
+                </li>
+
+                <li>
+                  <input id="pot5-not-req" type="radio" name="pot-requirement" value="not-req">
+                  <label for="pot5-not-req">Not required</label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <fieldset class="my-1">
+
+              <legend>Plant Size :</legend>
+
+              <ol class="size-fields">
+
+                <li>
+                  <input id="pot5-size-1" type="radio" name="plant-size" value="seed">
+                  <label for="pot5-size-1">Seedlings</label>
+                </li>
+
+                <li>
+                  <input id="pot5-size-2" type="radio" name="plant-size" value="sapling">
+                  <label for="pot5-size-2">Sapling</label>
+                </li>
+
+                <li>
+                  <input id="pot5-size-3" type="radio" name="plant-size" value="peak">
+                  <label for="pot5-size-3">Peak</label>
+                </li>
+
+              </ol>
+
+            </fieldset>
+
+            <fieldset>
+
+              <button class="button-buy my-1">Buy Now</button>
+
+            </fieldset>
+
+          </form>
+
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product container my-1">
+
+          <header>
+
+            <img src="img/plant6.jpg" alt="Calathea Orbifolia">
+
+            <div class="product-title-icons flex">
+
+              <h3>Calathea Orbifolia</h3>
+
+              <div class="flex">
+                <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                <button type="button"><i class="fas fa-heart"></i></button>
+              </div>
+
+            </div>
+
+            <div class="product-price-ratings flex">
+
+              <data value="40"><del>$67.00</del> <ins>$50.00</ins></data>
+
+              <dl>
+                <dd>4.5
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </dd>
+              </dl>
+
+            </div>
+
+            <p>
+              Smooth streaks of white stand out against the vivid green leaves of the Calathea <a href="#">View details</a>
+            </p>
+
+          </header>
+
+          <form>
+
+            <fieldset>
+
+              <legend>Pot requirement :</legend>
+
+              <ul class="pot-fields">
+
+                <li>
+                  <input id="pot6-req" type="radio" name="pot-requirement" value="req">
+                  <label for="pot6-req">Required</label>
+                </li>
+
+                <li>
+                  <input id="pot6-not-req" type="radio" name="pot-requirement" value="not-req">
+                  <label for="pot6-not-req">Not required</label>
+                </li>
+
+              </ul>
+
+            </fieldset>
+
+            <fieldset class="my-1">
+
+              <legend>Plant Size :</legend>
+
+              <ol class="size-fields">
+
+                <li>
+                  <input id="pot6-size-1" type="radio" name="plant-size" value="seed">
+                  <label for="pot6-size-1">Seedlings</label>
+                </li>
+
+                <li>
+                  <input id="pot6-size-2" type="radio" name="plant-size" value="sapling">
+                  <label for="pot6-size-2">Sapling</label>
+                </li>
+
+                <li>
+                  <input id="pot6-size-3" type="radio" name="plant-size" value="peak">
+                  <label for="pot6-size-3">Peak</label>
+                </li>
+
+              </ol>
+
+            </fieldset>
+
+            <fieldset>
+
+              <button class="button-buy my-1">Buy Now</button>
+
+            </fieldset>
+
+          </form>
+
+        </article>
+
+      </div>
 
     </section>
 
