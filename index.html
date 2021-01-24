@@ -188,792 +188,825 @@
 
     <!-- Filtering product form -->
 
-    <section class="product-filters flex">
+    <div class="section-product-and-filters">
 
-      <h2>Filters</h2>
+      <section class="display-filters">
 
-      <span class="button-filters"><i class="fas fa-sliders-h"></i></span>
+        <div class="product-filters flex">
+          <h2>Filters</h2>
 
-    </section>
+          <span class="button-filters"><i class="fas fa-sliders-h"></i></span>
+        </div>
 
-    <section class="display-filters">
+        <form class="filters">
 
-      <form class="filters">
+          <div class="filter-options">
 
-        <div class="filter-options">
+            <fieldset>
 
-          <fieldset>
+              <legend>Plant type :</legend>
 
-            <legend>Plant type :</legend>
+              <ul class="filter-plant-types">
 
-            <ul class="filter-plant-types">
+                <li>
+                  <input type="checkbox" name="type-filter" value="outdoor" id="filter-outdoor">
+                  <label for="filter-outdoor">Outdoor</label>
+                </li>
 
-              <li>
-                <input type="checkbox" name="type-filter" value="outdoor" id="filter-outdoor">
-                <label for="filter-outdoor">Outdoor</label>
-              </li>
+                <li>
+                  <input type="checkbox" name="type-filter" value="indoor" id="filter-indoor">
+                  <label for="filter-indoor">Indoor</label>
+                </li>
 
-              <li>
-                <input type="checkbox" name="type-filter" value="indoor" id="filter-indoor">
-                <label for="filter-indoor">Indoor</label>
-              </li>
+                <li>
+                  <input type="checkbox" name="type-filter" value="aerial" id="filter-aerial">
+                  <label for="filter-aerial">Aerial</label>
+                </li>
 
-              <li>
-                <input type="checkbox" name="type-filter" value="aerial" id="filter-aerial">
-                <label for="filter-aerial">Aerial</label>
-              </li>
+              </ul>
 
-            </ul>
+            </fieldset>
 
-          </fieldset>
+            <fieldset class="my-1">
 
-          <fieldset class="my-1">
+              <legend>Pot requirement :</legend>
 
-            <legend>Pot requirement :</legend>
+              <ul class="filter-pot-requirement">
 
-            <ul class="filter-pot-requirement">
+                <li><input type="checkbox" name="req-filter" value="incl" id="filter-incl"> <label
+                    for="filter-incl">Including Pot</label></li>
 
-              <li><input type="checkbox" name="req-filter" value="incl" id="filter-incl"> <label
-                  for="filter-incl">Including Pot</label></li>
+                <li><input type="checkbox" name="req-filter" value="excl" id="filter-excl"> <label
+                    for="filter-excl">Excluding Pot</label></li>
 
-              <li><input type="checkbox" name="req-filter" value="excl" id="filter-excl"> <label
-                  for="filter-excl">Excluding Pot</label></li>
+              </ul>
 
-            </ul>
+            </fieldset>
 
-          </fieldset>
+            <fieldset class="my-1">
 
-          <fieldset class="my-1">
+              <legend>Plant size :</legend>
 
-            <legend>Plant size :</legend>
+              <ol class="filter-plant-size">
 
-            <ol class="filter-plant-size">
+                <li><input type="checkbox" name="size-filter" value="input-seed" id="filter-seed"> <label
+                    for="filter-seed">Seedlings</label></li>
 
-              <li><input type="checkbox" name="size-filter" value="input-seed" id="filter-seed"> <label
-                  for="filter-seed">Seedlings</label></li>
+                <li><input type="checkbox" name="size-filter" value="input-sapling" id="filter-sapling"> <label
+                    for="filter-sapling">Sapling</label></li>
 
-              <li><input type="checkbox" name="size-filter" value="input-sapling" id="filter-sapling"> <label
-                  for="filter-sapling">Sapling</label></li>
+                <li><input type="checkbox" name="size-filter" value="input-peak" id="filter-peak"> <label
+                    for="filter-peak">Peak</label></li>
 
-              <li><input type="checkbox" name="size-filter" value="input-peak" id="filter-peak"> <label
-                  for="filter-peak">Peak</label></li>
+              </ol>
 
-            </ol>
+            </fieldset>
 
-          </fieldset>
+            <fieldset class="my-1">
 
-          <fieldset class="my-1">
+              <legend>Ratings (above)</legend>
 
-            <legend>Ratings (above)</legend>
+              <ol class="filter-list">
 
-            <ol class="filter-list">
+                <li>
+                  <input type="radio" name="rating" value="4" id="aboveFour">
+                  <label for="aboveFour">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </label>
+                </li>
 
-              <li>
-                <input type="radio" name="rating" value="4" id="aboveFour">
-                <label for="aboveFour">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </label>
-              </li>
+                <li>
+                  <input type="radio" name="rating" value="3" id="aboveThree">
+                  <label for="aboveThree">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </label>
+                </li>
 
-              <li>
-                <input type="radio" name="rating" value="3" id="aboveThree">
-                <label for="aboveThree">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </label>
-              </li>
+                <li>
+                  <input type="radio" name="rating" value="2" id="aboveTwo">
+                  <label for="aboveTwo">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </label>
+                </li>
 
-              <li>
-                <input type="radio" name="rating" value="2" id="aboveTwo">
-                <label for="aboveTwo">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </label>
-              </li>
+                <li>
+                  <input type="radio" name="rating" value="1" id="aboveOne">
+                  <label for="aboveOne">
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </label>
+                </li>
 
-              <li>
-                <input type="radio" name="rating" value="1" id="aboveOne">
-                <label for="aboveOne">
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                  <i class="far fa-star"></i>
-                </label>
-              </li>
+              </ol>
 
-            </ol>
+            </fieldset>
 
-          </fieldset>
+            <fieldset>
 
-          <fieldset>
+              <label class="label-sort" for="sort">Sort by</label>
 
-            <label class="label-sort" for="sort">Sort by</label>
+              <select name="sort" id="sort">
 
-            <select name="sort" id="sort">
+                <option value="relevance">Relevance</option>
+                <option value="new-arrivals">Newest Arrivals</option>
+                <option value="high-to-low">Price, lowest to highest</option>
+                <option value="low-to-high">Price, highest to lowest</option>
 
-              <option value="relevance">Relevance</option>
-              <option value="new-arrivals">Newest Arrivals</option>
-              <option value="high-to-low">Price, lowest to highest</option>
-              <option value="low-to-high">Price, highest to lowest</option>
+              </select>
 
-            </select>
+            </fieldset>
 
-          </fieldset>
+          </div>
+
+        </form>
+
+      </section>
+
+      <section class="results grid-span">
+
+        <div class="products-and-search">
+          <h2 class="subheading">Here are the greenies -</h2>
+          <section class="product-search">
+
+            <div class="search-box">
+              <input class="search-bar" type="text" placeholder="Search for exotic plants" name="search" class="search">
+              <button class="button-search">
+                <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
+                <!-- <i class="fas fa-search"></i> -->
+              </button>
+            </div>
+
+
+          </section>
+        </div>
+
+        <!-- <div class="grid grid-1 grid-row-gap"> -->
+        <div class="grid products-list">
+
+          <!-- Product 1 -->
+          <article class="product container my-1">
+
+            <header>
+
+              <img class="product-picture" src="img/plant1.jpg" alt="Silver Dollar Plant">
+
+              <div class="product-title-icons flex">
+
+                <div class="product-title-newflash flex">
+
+                  <h3>Silver Dollar Plant</h3>
+                  <img class="new-product-icon" src="img/new.png" alt="">
+
+                </div>
+
+                <div class="flex">
+                  <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button type="button"><i class="fas fa-heart"></i></button>
+                </div>
+
+              </div>
+
+              <div class="product-price-ratings flex">
+
+                <data value="40"><del>$50.00</del> <ins>$40.00</ins></data>
+
+                <dl>
+                  <dd>4.5
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </dd>
+                </dl>
+
+              </div>
+
+              <div class="product-discount-category">
+                <span><strong>Discount : </strong> <em>20% off</em></span>
+
+                <span><strong>Category : </strong> <em>Indoor</em></span>
+              </div>
+
+              <br>
+
+              <p>
+                If you’re looking for drought-tolerant plants, succulents like the Xerosicyos da <a href="#">View
+                  details</a>
+              </p>
+
+            </header>
+
+            <form>
+
+              <fieldset>
+
+                <legend>Pot requirement :</legend>
+
+                <ul class="pot-fields">
+
+                  <li>
+                    <input id="pot1-req" type="radio" name="pot-requirement" value="req">
+                    <label for="pot1-req">Required</label>
+                  </li>
+
+                  <li>
+                    <input id="pot1-not-req" type="radio" name="pot-requirement" value="not-req">
+                    <label for="pot1-not-req">Not required</label>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="my-1">
+
+                <legend>Plant Size :</legend>
+
+                <ol class="size-fields">
+
+                  <li>
+                    <input id="pot1-size-1" type="radio" name="plant-size" value="seed">
+                    <label for="pot1-size-1">Seedlings</label>
+                  </li>
+
+                  <li>
+                    <input id="pot1-size-2" type="radio" name="plant-size" value="sapling">
+                    <label for="pot1-size-2">Sapling</label>
+                  </li>
+
+                  <li>
+                    <input id="pot1-size-3" type="radio" name="plant-size" value="peak">
+                    <label for="pot1-size-3">Peak</label>
+                  </li>
+
+                </ol>
+
+              </fieldset>
+
+              <fieldset>
+
+                <button class="button-buy my-1">Buy Now</button>
+
+              </fieldset>
+
+            </form>
+
+          </article>
+
+          <!-- Product 2 -->
+          <article class="product container my-1">
+
+            <header>
+
+              <img src="img/plant2.jpg" alt="String Of Pearls">
+
+              <div class="product-title-icons flex">
+
+                <h3>String Of Pearls</h3>
+
+                <div class="flex">
+                  <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button type="button"><i class="fas fa-heart"></i></button>
+                </div>
+
+              </div>
+
+              <div class="product-price-ratings flex">
+
+                <data value="40"><del>$85.00</del> <ins>$72.25</ins></data>
+
+                <dl>
+                  <dd>5.0
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </dd>
+                </dl>
+
+              </div>
+
+              <div class="product-discount-category">
+                <span><strong>Discount : </strong> <em>15% off</em></span>
+
+                <span><strong>Category : </strong> <em>Aerial</em></span>
+              </div>
+
+              <br>
+
+              <p>
+                What a unique houseplant! Guests are sure to comment on the grace <a href="#">View details</a>
+              </p>
+
+            </header>
+
+            <form>
+
+              <fieldset>
+
+                <legend>Pot requirement :</legend>
+
+                <ul class="pot-fields">
+
+                  <li>
+                    <input id="pot2-req" type="radio" name="pot-requirement" value="req">
+                    <label for="pot2-req">Required</label>
+                  </li>
+
+                  <li>
+                    <input id="pot2-not-req" type="radio" name="pot-requirement" value="not-req">
+                    <label for="pot2-not-req">Not required</label>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="my-1">
+
+                <legend>Plant Size :</legend>
+
+                <ol class="size-fields">
+
+                  <li>
+                    <input id="pot2-size-1" type="radio" name="plant-size" value="seed">
+                    <label for="pot2-size-1">Seedlings</label>
+                  </li>
+
+                  <li>
+                    <input id="pot2-size-2" type="radio" name="plant-size" value="sapling">
+                    <label for="pot2-size-2">Sapling</label>
+                  </li>
+
+                  <li>
+                    <input id="pot2-size-3" type="radio" name="plant-size" value="peak">
+                    <label for="pot2-size-3">Peak</label>
+                  </li>
+
+                </ol>
+
+              </fieldset>
+
+              <fieldset>
+
+                <button class="button-buy my-1">Buy Now</button>
+
+              </fieldset>
+
+            </form>
+
+          </article>
+
+          <!-- Product 3 -->
+          <article class="product container my-1">
+
+            <header>
+
+              <img src="img/plant3.jpg" alt="Peace Lily">
+
+              <div class="product-title-icons flex">
+
+                <div class="product-title-newflash flex">
+
+                  <h3>Peace Lily</h3>
+                  <img class="new-product-icon" src="img/new.png" alt="">
+
+                </div>
+
+                <div class="flex">
+                  <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button type="button"><i class="fas fa-heart"></i></button>
+                </div>
+
+              </div>
+
+              <div class="product-price-ratings flex">
+
+                <data value="40"><del>$33.00</del> <ins>$30.36</ins></data>
+
+                <dl>
+                  <dd>4.0
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </dd>
+                </dl>
+
+              </div>
+
+              <div class="product-discount-category">
+                <span><strong>Discount : </strong> <em>8% off</em></span>
+
+                <span><strong>Category : </strong> <em>Indoor</em></span>
+              </div>
+
+              <br>
+
+              <p>
+                Sometimes flowering plants prove the most challenging to keep healthy, but certa <a href="#">View
+                  details</a>
+              </p>
+
+            </header>
+
+            <form>
+
+              <fieldset>
+
+                <legend>Pot requirement :</legend>
+
+                <ul class="pot-fields">
+
+                  <li>
+                    <input id="pot3-req" type="radio" name="pot-requirement" value="req">
+                    <label for="pot3-req">Required</label>
+                  </li>
+
+                  <li>
+                    <input id="pot3-not-req" type="radio" name="pot-requirement" value="not-req">
+                    <label for="pot3-not-req">Not required</label>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="my-1">
+
+                <legend>Plant Size :</legend>
+
+                <ol class="size-fields">
+
+                  <li>
+                    <input id="pot3-size-1" type="radio" name="plant-size" value="seed">
+                    <label for="pot3-size-1">Seedlings</label>
+                  </li>
+
+                  <li>
+                    <input id="pot3-size-2" type="radio" name="plant-size" value="sapling">
+                    <label for="pot3-size-2">Sapling</label>
+                  </li>
+
+                  <li>
+                    <input id="pot3-size-3" type="radio" name="plant-size" value="peak">
+                    <label for="pot3-size-3">Peak</label>
+                  </li>
+
+                </ol>
+
+              </fieldset>
+
+              <fieldset>
+
+                <button class="button-buy my-1">Buy Now</button>
+
+              </fieldset>
+
+            </form>
+
+          </article>
+
+          <!-- Product 4 -->
+          <article class="product container my-1">
+
+            <header>
+
+              <img src="img/plant4.jpg" alt="Areca Palm">
+
+              <div class="product-title-icons flex">
+
+                <h3>Areca Palm</h3>
+
+                <div class="flex">
+                  <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button type="button"><i class="fas fa-heart"></i></button>
+                </div>
+
+              </div>
+
+              <div class="product-price-ratings flex">
+
+                <data value="40"><del>$76.00</del> <ins>$66.88</ins></data>
+
+                <dl>
+                  <dd>3.5
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                  </dd>
+                </dl>
+
+              </div>
+
+              <div class="product-discount-category">
+                <span><strong>Discount : </strong> <em>12% off</em></span>
+
+                <span><strong>Category : </strong> <em>Outdoor</em></span>
+              </div>
+
+              <p>
+                Dypsis lutescens, commonly known as golden cane palm or areca palm, makes a love <a href="#">View
+                  details</a>
+              </p>
+
+            </header>
+
+            <form>
+
+              <fieldset>
+
+                <legend>Pot requirement :</legend>
+
+                <ul class="pot-fields">
+
+                  <li>
+                    <input id="pot4-req" type="radio" name="pot-requirement" value="req">
+                    <label for="pot4-req">Required</label>
+                  </li>
+
+                  <li>
+                    <input id="pot4-not-req" type="radio" name="pot-requirement" value="not-req">
+                    <label for="pot4-not-req">Not required</label>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="my-1">
+
+                <legend>Plant Size :</legend>
+
+                <ol class="size-fields">
+
+                  <li>
+                    <input id="pot4-size-1" type="radio" name="plant-size" value="seed">
+                    <label for="pot4-size-1">Seedlings</label>
+                  </li>
+
+                  <li>
+                    <input id="pot4-size-2" type="radio" name="plant-size" value="sapling">
+                    <label for="pot4-size-2">Sapling</label>
+                  </li>
+
+                  <li>
+                    <input id="pot4-size-3" type="radio" name="plant-size" value="peak">
+                    <label for="pot4-size-3">Peak</label>
+                  </li>
+
+                </ol>
+
+              </fieldset>
+
+              <fieldset>
+
+                <button class="button-buy my-1">Buy Now</button>
+
+              </fieldset>
+
+            </form>
+
+          </article>
+
+          <!-- Product 5 -->
+          <article class="product container my-1">
+
+            <header>
+
+              <img src="img/plant5.jpg" alt="Grafted Ficus Bonsai">
+
+              <div class="product-title-icons flex">
+
+                <div class="product-title-newflash flex">
+
+                  <h3>Grafted Ficus Bonsai</h3>
+                  <img class="new-product-icon" src="img/new.png" alt="">
+
+                </div>
+
+                <div class="flex">
+                  <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button type="button"><i class="fas fa-heart"></i></button>
+                </div>
+
+              </div>
+
+              <div class="product-price-ratings flex">
+
+                <data value="40"><del>$24.00</del> <ins>$22.80</ins></data>
+
+                <dl>
+                  <dd>4.0
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </dd>
+                </dl>
+
+              </div>
+
+              <div class="product-discount-category">
+                <span><strong>Discount : </strong> <em>5% off</em></span>
+
+                <span><strong>Category : </strong> <em>Indoor</em></span>
+              </div>
+
+              <p>
+                Are you looking for a small desk plant sure to spark conversation? Ficus microca <a href="#">View
+                  details</a>
+              </p>
+
+            </header>
+
+            <form>
+
+              <fieldset>
+
+                <legend>Pot requirement :</legend>
+
+                <ul class="pot-fields">
+
+                  <li>
+                    <input id="pot5-req" type="radio" name="pot-requirement" value="req">
+                    <label for="pot5-req">Required</label>
+                  </li>
+
+                  <li>
+                    <input id="pot5-not-req" type="radio" name="pot-requirement" value="not-req">
+                    <label for="pot5-not-req">Not required</label>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="my-1">
+
+                <legend>Plant Size :</legend>
+
+                <ol class="size-fields">
+
+                  <li>
+                    <input id="pot5-size-1" type="radio" name="plant-size" value="seed">
+                    <label for="pot5-size-1">Seedlings</label>
+                  </li>
+
+                  <li>
+                    <input id="pot5-size-2" type="radio" name="plant-size" value="sapling">
+                    <label for="pot5-size-2">Sapling</label>
+                  </li>
+
+                  <li>
+                    <input id="pot5-size-3" type="radio" name="plant-size" value="peak">
+                    <label for="pot5-size-3">Peak</label>
+                  </li>
+
+                </ol>
+
+              </fieldset>
+
+              <fieldset>
+
+                <button class="button-buy my-1">Buy Now</button>
+
+              </fieldset>
+
+            </form>
+
+          </article>
+
+          <!-- Product 6 -->
+          <article class="product container my-1">
+
+            <header>
+
+              <img src="img/plant6.jpg" alt="Calathea Orbifolia">
+
+              <div class="product-title-icons flex">
+
+                <h3>Calathea Orbifolia</h3>
+
+                <div class="flex">
+                  <button type="button"><i class="fas fa-shopping-cart"></i></button>
+                  <button type="button"><i class="fas fa-heart"></i></button>
+                </div>
+
+              </div>
+
+              <div class="product-price-ratings flex">
+
+                <data value="40"><del>$67.00</del> <ins>$53.60</ins></data>
+
+                <dl>
+                  <dd>4.5
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                  </dd>
+                </dl>
+
+              </div>
+
+              <div class="product-discount-category">
+                <span><strong>Discount : </strong> <em>20% off</em></span>
+
+                <span><strong>Category : </strong> <em>Outdoor</em></span>
+              </div>
+
+              <p>
+                Smooth streaks of white stand out against the vivid green leaves of the Calathea <a href="#">View
+                  details</a>
+              </p>
+
+            </header>
+
+            <form>
+
+              <fieldset>
+
+                <legend>Pot requirement :</legend>
+
+                <ul class="pot-fields">
+
+                  <li>
+                    <input id="pot6-req" type="radio" name="pot-requirement" value="req">
+                    <label for="pot6-req">Required</label>
+                  </li>
+
+                  <li>
+                    <input id="pot6-not-req" type="radio" name="pot-requirement" value="not-req">
+                    <label for="pot6-not-req">Not required</label>
+                  </li>
+
+                </ul>
+
+              </fieldset>
+
+              <fieldset class="my-1">
+
+                <legend>Plant Size :</legend>
+
+                <ol class="size-fields">
+
+                  <li>
+                    <input id="pot6-size-1" type="radio" name="plant-size" value="seed">
+                    <label for="pot6-size-1">Seedlings</label>
+                  </li>
+
+                  <li>
+                    <input id="pot6-size-2" type="radio" name="plant-size" value="sapling">
+                    <label for="pot6-size-2">Sapling</label>
+                  </li>
+
+                  <li>
+                    <input id="pot6-size-3" type="radio" name="plant-size" value="peak">
+                    <label for="pot6-size-3">Peak</label>
+                  </li>
+
+                </ol>
+
+              </fieldset>
+
+              <fieldset>
+
+                <button class="button-buy my-1">Buy Now</button>
+
+              </fieldset>
+
+            </form>
+
+          </article>
 
         </div>
 
-      </form>
+      </section>
 
-    </section>
-
-    <section class="product-search">
-
-      <div class="search-box">
-        <input class="search-bar" type="text" placeholder="Search for exotic plants" name="search" class="search">
-        <button class="button-search">
-          <img src="https://img.icons8.com/cotton/24/000000/search--v2.png">
-          <!-- <i class="fas fa-search"></i> -->
-        </button>
-      </div>
-
-
-    </section>
-
-    <section class="results">
-
-      <h2 class="subheading">Here are the greenies -</h2>
-
-      <!-- <div class="grid grid-1 grid-row-gap"> -->
-      <div class="grid products-list">
-
-        <!-- Product 1 -->
-        <article class="product container my-1">
-
-          <header>
-
-            <img class="product-picture" src="img/plant1.jpg" alt="Silver Dollar Plant">
-
-            <div class="product-title-icons flex">
-
-              <div class="product-title-newflash flex">
-
-                <h3>Silver Dollar Plant</h3>
-                <img class="new-product-icon" src="img/new.png" alt="">
-
-              </div>
-
-              <div class="flex">
-                <button type="button"><i class="fas fa-shopping-cart"></i></button>
-                <button type="button"><i class="fas fa-heart"></i></button>
-              </div>
-
-            </div>
-
-            <div class="product-price-ratings flex">
-
-              <data value="40"><del>$50.00</del> <ins>$40.00</ins> (20% off)</data>
-
-              <dl>
-                <dd>4.5
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </dd>
-              </dl>
-
-            </div>
-
-            <span><strong>Category : </strong> <em>Indoor</em></span>
-
-            <p>
-              If you’re looking for drought-tolerant plants, succulents like the Xerosicyos da <a href="#">View
-                details</a>
-            </p>
-
-          </header>
-
-          <form>
-
-            <fieldset>
-
-              <legend>Pot requirement :</legend>
-
-              <ul class="pot-fields">
-
-                <li>
-                  <input id="pot1-req" type="radio" name="pot-requirement" value="req">
-                  <label for="pot1-req">Required</label>
-                </li>
-
-                <li>
-                  <input id="pot1-not-req" type="radio" name="pot-requirement" value="not-req">
-                  <label for="pot1-not-req">Not required</label>
-                </li>
-
-              </ul>
-
-            </fieldset>
-
-            <fieldset class="my-1">
-
-              <legend>Plant Size :</legend>
-
-              <ol class="size-fields">
-
-                <li>
-                  <input id="pot1-size-1" type="radio" name="plant-size" value="seed">
-                  <label for="pot1-size-1">Seedlings</label>
-                </li>
-
-                <li>
-                  <input id="pot1-size-2" type="radio" name="plant-size" value="sapling">
-                  <label for="pot1-size-2">Sapling</label>
-                </li>
-
-                <li>
-                  <input id="pot1-size-3" type="radio" name="plant-size" value="peak">
-                  <label for="pot1-size-3">Peak</label>
-                </li>
-
-              </ol>
-
-            </fieldset>
-
-            <fieldset>
-
-              <button class="button-buy my-1">Buy Now</button>
-
-            </fieldset>
-
-          </form>
-
-        </article>
-
-        <!-- Product 2 -->
-        <article class="product container my-1">
-
-          <header>
-
-            <img src="img/plant2.jpg" alt="String Of Pearls">
-
-            <div class="product-title-icons flex">
-
-              <h3>String Of Pearls</h3>
-
-              <div class="flex">
-                <button type="button"><i class="fas fa-shopping-cart"></i></button>
-                <button type="button"><i class="fas fa-heart"></i></button>
-              </div>
-
-            </div>
-
-            <div class="product-price-ratings flex">
-
-              <data value="40"><del>$85.00</del> <ins>$72.25</ins> (15% off)</data>
-
-              <dl>
-                <dd>5.0
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </dd>
-              </dl>
-
-            </div>
-
-            <span><strong>Category : </strong> <em>Aerial</em></span>
-
-            <p>
-              What a unique houseplant! Guests are sure to comment on the grace <a href="#">View details</a>
-            </p>
-
-          </header>
-
-          <form>
-
-            <fieldset>
-
-              <legend>Pot requirement :</legend>
-
-              <ul class="pot-fields">
-
-                <li>
-                  <input id="pot2-req" type="radio" name="pot-requirement" value="req">
-                  <label for="pot2-req">Required</label>
-                </li>
-
-                <li>
-                  <input id="pot2-not-req" type="radio" name="pot-requirement" value="not-req">
-                  <label for="pot2-not-req">Not required</label>
-                </li>
-
-              </ul>
-
-            </fieldset>
-
-            <fieldset class="my-1">
-
-              <legend>Plant Size :</legend>
-
-              <ol class="size-fields">
-
-                <li>
-                  <input id="pot2-size-1" type="radio" name="plant-size" value="seed">
-                  <label for="pot2-size-1">Seedlings</label>
-                </li>
-
-                <li>
-                  <input id="pot2-size-2" type="radio" name="plant-size" value="sapling">
-                  <label for="pot2-size-2">Sapling</label>
-                </li>
-
-                <li>
-                  <input id="pot2-size-3" type="radio" name="plant-size" value="peak">
-                  <label for="pot2-size-3">Peak</label>
-                </li>
-
-              </ol>
-
-            </fieldset>
-
-            <fieldset>
-
-              <button class="button-buy my-1">Buy Now</button>
-
-            </fieldset>
-
-          </form>
-
-        </article>
-
-        <!-- Product 3 -->
-        <article class="product container my-1">
-
-          <header>
-
-            <img src="img/plant3.jpg" alt="Peace Lily">
-
-            <div class="product-title-icons flex">
-
-              <div class="product-title-newflash flex">
-
-                <h3>Peace Lily</h3>
-                <img class="new-product-icon" src="img/new.png" alt="">
-
-              </div>
-
-              <div class="flex">
-                <button type="button"><i class="fas fa-shopping-cart"></i></button>
-                <button type="button"><i class="fas fa-heart"></i></button>
-              </div>
-
-            </div>
-
-            <div class="product-price-ratings flex">
-
-              <data value="40"><del>$33.00</del> <ins>$30.36</ins> (8% off)</data>
-
-              <dl>
-                <dd>4.0
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </dd>
-              </dl>
-
-            </div>
-
-            <span><strong>Category : </strong> <em>Indoor</em></span>
-
-            <p>
-              Sometimes flowering plants prove the most challenging to keep healthy, but certa <a href="#">View
-                details</a>
-            </p>
-
-          </header>
-
-          <form>
-
-            <fieldset>
-
-              <legend>Pot requirement :</legend>
-
-              <ul class="pot-fields">
-
-                <li>
-                  <input id="pot3-req" type="radio" name="pot-requirement" value="req">
-                  <label for="pot3-req">Required</label>
-                </li>
-
-                <li>
-                  <input id="pot3-not-req" type="radio" name="pot-requirement" value="not-req">
-                  <label for="pot3-not-req">Not required</label>
-                </li>
-
-              </ul>
-
-            </fieldset>
-
-            <fieldset class="my-1">
-
-              <legend>Plant Size :</legend>
-
-              <ol class="size-fields">
-
-                <li>
-                  <input id="pot3-size-1" type="radio" name="plant-size" value="seed">
-                  <label for="pot3-size-1">Seedlings</label>
-                </li>
-
-                <li>
-                  <input id="pot3-size-2" type="radio" name="plant-size" value="sapling">
-                  <label for="pot3-size-2">Sapling</label>
-                </li>
-
-                <li>
-                  <input id="pot3-size-3" type="radio" name="plant-size" value="peak">
-                  <label for="pot3-size-3">Peak</label>
-                </li>
-
-              </ol>
-
-            </fieldset>
-
-            <fieldset>
-
-              <button class="button-buy my-1">Buy Now</button>
-
-            </fieldset>
-
-          </form>
-
-        </article>
-
-        <!-- Product 4 -->
-        <article class="product container my-1">
-
-          <header>
-
-            <img src="img/plant4.jpg" alt="Areca Palm">
-
-            <div class="product-title-icons flex">
-
-              <h3>Areca Palm</h3>
-
-              <div class="flex">
-                <button type="button"><i class="fas fa-shopping-cart"></i></button>
-                <button type="button"><i class="fas fa-heart"></i></button>
-              </div>
-
-            </div>
-
-            <div class="product-price-ratings flex">
-
-              <data value="40"><del>$76.00</del> <ins>$66.88</ins> (12% off)</data>
-
-              <dl>
-                <dd>3.5
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                  <i class="far fa-star"></i>
-                </dd>
-              </dl>
-
-            </div>
-
-            <span><strong>Category : </strong> <em>Outdoor</em></span>
-
-            <p>
-              Dypsis lutescens, commonly known as golden cane palm or areca palm, makes a love <a href="#">View
-                details</a>
-            </p>
-
-          </header>
-
-          <form>
-
-            <fieldset>
-
-              <legend>Pot requirement :</legend>
-
-              <ul class="pot-fields">
-
-                <li>
-                  <input id="pot4-req" type="radio" name="pot-requirement" value="req">
-                  <label for="pot4-req">Required</label>
-                </li>
-
-                <li>
-                  <input id="pot4-not-req" type="radio" name="pot-requirement" value="not-req">
-                  <label for="pot4-not-req">Not required</label>
-                </li>
-
-              </ul>
-
-            </fieldset>
-
-            <fieldset class="my-1">
-
-              <legend>Plant Size :</legend>
-
-              <ol class="size-fields">
-
-                <li>
-                  <input id="pot4-size-1" type="radio" name="plant-size" value="seed">
-                  <label for="pot4-size-1">Seedlings</label>
-                </li>
-
-                <li>
-                  <input id="pot4-size-2" type="radio" name="plant-size" value="sapling">
-                  <label for="pot4-size-2">Sapling</label>
-                </li>
-
-                <li>
-                  <input id="pot4-size-3" type="radio" name="plant-size" value="peak">
-                  <label for="pot4-size-3">Peak</label>
-                </li>
-
-              </ol>
-
-            </fieldset>
-
-            <fieldset>
-
-              <button class="button-buy my-1">Buy Now</button>
-
-            </fieldset>
-
-          </form>
-
-        </article>
-
-        <!-- Product 5 -->
-        <article class="product container my-1">
-
-          <header>
-
-            <img src="img/plant5.jpg" alt="Grafted Ficus Bonsai">
-
-            <div class="product-title-icons flex">
-
-              <div class="product-title-newflash flex">
-
-                <h3>Grafted Ficus Bonsai</h3>
-                <img class="new-product-icon" src="img/new.png" alt="">
-
-              </div>
-
-              <div class="flex">
-                <button type="button"><i class="fas fa-shopping-cart"></i></button>
-                <button type="button"><i class="fas fa-heart"></i></button>
-              </div>
-
-            </div>
-
-            <div class="product-price-ratings flex">
-
-              <data value="40"><del>$24.00</del> <ins>$22.80</ins> (5% off)</data>
-
-              <dl>
-                <dd>4.0
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="far fa-star"></i>
-                </dd>
-              </dl>
-
-            </div>
-
-            <span><strong>Category : </strong> <em>Indoor</em></span>
-
-            <p>
-              Are you looking for a small desk plant sure to spark conversation? Ficus microca <a href="#">View
-                details</a>
-            </p>
-
-          </header>
-
-          <form>
-
-            <fieldset>
-
-              <legend>Pot requirement :</legend>
-
-              <ul class="pot-fields">
-
-                <li>
-                  <input id="pot5-req" type="radio" name="pot-requirement" value="req">
-                  <label for="pot5-req">Required</label>
-                </li>
-
-                <li>
-                  <input id="pot5-not-req" type="radio" name="pot-requirement" value="not-req">
-                  <label for="pot5-not-req">Not required</label>
-                </li>
-
-              </ul>
-
-            </fieldset>
-
-            <fieldset class="my-1">
-
-              <legend>Plant Size :</legend>
-
-              <ol class="size-fields">
-
-                <li>
-                  <input id="pot5-size-1" type="radio" name="plant-size" value="seed">
-                  <label for="pot5-size-1">Seedlings</label>
-                </li>
-
-                <li>
-                  <input id="pot5-size-2" type="radio" name="plant-size" value="sapling">
-                  <label for="pot5-size-2">Sapling</label>
-                </li>
-
-                <li>
-                  <input id="pot5-size-3" type="radio" name="plant-size" value="peak">
-                  <label for="pot5-size-3">Peak</label>
-                </li>
-
-              </ol>
-
-            </fieldset>
-
-            <fieldset>
-
-              <button class="button-buy my-1">Buy Now</button>
-
-            </fieldset>
-
-          </form>
-
-        </article>
-
-        <!-- Product 6 -->
-        <article class="product container my-1">
-
-          <header>
-
-            <img src="img/plant6.jpg" alt="Calathea Orbifolia">
-
-            <div class="product-title-icons flex">
-
-              <h3>Calathea Orbifolia</h3>
-
-              <div class="flex">
-                <button type="button"><i class="fas fa-shopping-cart"></i></button>
-                <button type="button"><i class="fas fa-heart"></i></button>
-              </div>
-
-            </div>
-
-            <div class="product-price-ratings flex">
-
-              <data value="40"><del>$67.00</del> <ins>$53.60</ins> (20% off)</data>
-
-              <dl>
-                <dd>4.5
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-                </dd>
-              </dl>
-
-            </div>
-
-            <span><strong>Category : </strong> <em>Outdoor</em></span>
-
-            <p>
-              Smooth streaks of white stand out against the vivid green leaves of the Calathea <a href="#">View
-                details</a>
-            </p>
-
-          </header>
-
-          <form>
-
-            <fieldset>
-
-              <legend>Pot requirement :</legend>
-
-              <ul class="pot-fields">
-
-                <li>
-                  <input id="pot6-req" type="radio" name="pot-requirement" value="req">
-                  <label for="pot6-req">Required</label>
-                </li>
-
-                <li>
-                  <input id="pot6-not-req" type="radio" name="pot-requirement" value="not-req">
-                  <label for="pot6-not-req">Not required</label>
-                </li>
-
-              </ul>
-
-            </fieldset>
-
-            <fieldset class="my-1">
-
-              <legend>Plant Size :</legend>
-
-              <ol class="size-fields">
-
-                <li>
-                  <input id="pot6-size-1" type="radio" name="plant-size" value="seed">
-                  <label for="pot6-size-1">Seedlings</label>
-                </li>
-
-                <li>
-                  <input id="pot6-size-2" type="radio" name="plant-size" value="sapling">
-                  <label for="pot6-size-2">Sapling</label>
-                </li>
-
-                <li>
-                  <input id="pot6-size-3" type="radio" name="plant-size" value="peak">
-                  <label for="pot6-size-3">Peak</label>
-                </li>
-
-              </ol>
-
-            </fieldset>
-
-            <fieldset>
-
-              <button class="button-buy my-1">Buy Now</button>
-
-            </fieldset>
-
-          </form>
-
-        </article>
-
-      </div>
-
-    </section>
+    </div>
 
     <nav aria-label="Pagination" class="pagination text-center container">
 

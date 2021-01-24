@@ -169,12 +169,11 @@ font-weight: lighter;
 /* ---------------------- Section HIGHLIGHTS ---------------------- */
 .highlights .grid{
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .highlight-1 {
-  height: 40vh;
+  height: 14em;
   background: linear-gradient(
     rgba(0, 0, 0, 0.377), 
     rgba(0, 0, 0, 0.377)
@@ -183,11 +182,13 @@ font-weight: lighter;
   background-position: center;
   border-radius: 1rem;
   color: #fff;
-  padding: 7rem;
+  padding: 0em 2em;
+  display: grid;
+  align-items: center;
 }
 
 .highlight-2 {
-  height: 40vh;
+  height: 14em;
   background: linear-gradient(
     rgba(0, 0, 0, 0.562), 
     rgba(0, 0, 0, 0.562)
@@ -196,11 +197,13 @@ font-weight: lighter;
   background-position: center;
   border-radius: 1rem;
   color: #fff;
-  padding: 7rem;
+  padding: 0em 2em;
+  display: grid;
+  align-items: center;
 }
 
 .highlight-3 {
-  height: 40vh;
+  height: 14em;
   background: linear-gradient(
     rgba(0, 0, 0, 0.445), 
     rgba(0, 0, 0, 0.445)
@@ -209,7 +212,9 @@ font-weight: lighter;
   background-position: center;
   border-radius: 1rem;
   color: #fff;
-  padding: 7rem;
+  padding: 0em 2em;
+  display: grid;
+  align-items: center;
 }
 /* ---------------------------------------------------------------- */
 
@@ -284,8 +289,7 @@ font-weight: lighter;
 
 .results .grid {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .results fieldset {
@@ -308,6 +312,11 @@ font-weight: lighter;
 }
 
 .product-price-ratings {
+  justify-content: space-between;
+}
+
+.product-discount-category {
+  display: flex;
   justify-content: space-between;
 }
 

@@ -185,6 +185,15 @@ legend.legend {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grid-span {
+    grid-column: 2/ span 4;
+  }
+
+
   .flex {
     display: flex;
     justify-content: center;
