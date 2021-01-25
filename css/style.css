@@ -312,12 +312,28 @@ font-weight: lighter;
   margin-top: 1em;
 }
 
+.products-list article {
+  margin: 0.5em 0;
+}
+
 .product-title-icons {
   justify-content: space-between;
 }
 
 .product-title-icons button {
   padding: 0.5em;
+}
+
+.section-product-and-filters {
+  margin-top: 2em;
+}
+
+.product article {
+  margin: 0.4em 0;
+}
+
+.product-title-icons i {
+  padding: 0 0.2em;
 }
 
 .product-price-ratings {
@@ -342,6 +358,11 @@ del {
 
 ins {
   color: var(--color-primary);
+}
+
+.search-box {
+  display: flex;
+  gap: 0.5em;
 }
 
 .pot-fields input,
@@ -474,7 +495,7 @@ ins {
 
 
 /* TOP BUTTON */
-.section-top-button div {
+.section-top-button article {
   height: 3.5rem; 
   width: 3.5rem; 
   background-color: rgb(160, 160, 160); 

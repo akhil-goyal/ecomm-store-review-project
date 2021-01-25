@@ -29,9 +29,6 @@
     }
 
     /* TRENDING */
-    section {
-        margin-top: 1em;
-    }
 
     .trending-products img{
         height: 12em;
@@ -158,10 +155,6 @@
     }
 
     /* TRENDING */
-    section {
-        margin-top: 1em;
-    }
-
     .trending-products img{
         height: 12em;
         width: 12em;
@@ -192,6 +185,14 @@
     }
 
     /* PRODUCTS */
+    .section-product-and-filters {
+        margin-top: 2em;
+    }
+
+    .product-filters {
+        justify-content: start;
+    }
+
     .product img {
         height: 20em;
     }
@@ -301,9 +302,6 @@
     }
 
     /* TRENDING */
-    section {
-        margin-top: 2em;
-    }
 
     .trending-products img{
         height: 15em;
@@ -344,6 +342,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         align-items: flex-start;
+        margin-top: 2em;
     }
 
     .button-filters {
@@ -471,6 +470,7 @@
     /* HERO */
     .heading {
         height: 45vh;
+        margin: 0;
         display: grid;
         align-items: center;
     }
@@ -480,7 +480,8 @@
     }
 
     /* TRENDING */
-    section {
+
+    .trending {
         margin-top: 2em;
     }
 
@@ -498,6 +499,10 @@
     }
 
     /* HIGHLIGHTS */
+    .highlights {
+        margin-top: 1em;
+    }
+
     .highlight-1,
     .highlight-2,
     .highlight-3
@@ -514,15 +519,30 @@
     }
 
     /* SEARCH BAR */
+    .search-box {
+        display: flex;
+        gap: 0.5em;
+    }
+
     .search-box input {
         width: 15em;
     }
 
     /* PRODUCTS */
+
+    .product article {
+        margin: 0.4em 0;
+    }
+
+    .product-title-icons i {
+        padding: 0 0.2em;
+    }
+
     .section-product-and-filters {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         align-items: flex-start;
+        margin-top: 4em;
     }
 
     .button-filters {
@@ -593,6 +613,10 @@
         padding: 0 1rem;
     }
 
+    small {
+        justify-self: center;
+    }
+
     legend,
     h3,
     .label-sort
@@ -609,6 +633,10 @@
 
 /* For full HD display & above */
 @media only screen and (min-width: 1920px) {
+
+    body a,p{
+        font-size: 1.5em;
+    }
 
     .container {
         max-width: 2200px;
@@ -664,9 +692,6 @@
     }
 
     /* TRENDING */
-    section {
-        margin-top: 2em;
-    }
 
     .trending-products img{
         height: 25em;
@@ -708,6 +733,7 @@
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         align-items: flex-start;
+        margin-top: 3em;
     }
 
     .button-filters {
