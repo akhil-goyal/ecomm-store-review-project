@@ -76,10 +76,15 @@
 
     .results .grid {
         display: grid;
+        row-gap: 1em;
         grid-template-rows: repeat(2, 1fr);
     }
 
     /* PAGINATION */
+    .pagination {
+        margin-top: 1em;
+    }
+
     .buttons-prev-next {
         justify-content: center;
     }
@@ -114,6 +119,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 20px;
+    }
+
      /* HEADER */
      .page-header {
         height: 4em;
@@ -128,6 +140,10 @@
         height: 2.4em;
         width: 1.8em;
     }
+
+    .side-bar a {
+        font-size: 1.2em;
+      }
       
 
     /* HERO */
@@ -189,10 +205,15 @@
 
     .results .grid {
         display: grid;
+        row-gap: 1em;
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* PAGINATION */
+    .pagination {
+        margin-top: 1em;
+    }
+
     .buttons-prev-next {
         justify-content: center;
     }
@@ -226,6 +247,13 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 40px;
+    }
 
     .page-header {
         display: none;
@@ -326,6 +354,21 @@
         display: block;
     }
 
+    .product-filters {
+        justify-content: start;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        border-radius: 1em 1em 0em 0em;
+        padding: 0 1em;
+        margin-top: 1em;
+        }
+        
+    .filters {
+        border: 0.2em solid var(--color-primary);
+        border-radius: 0em 0em 1em 1em;
+        padding: 2em 1em;
+    }
+
     .product img {
         height: 22em;
     }
@@ -345,10 +388,15 @@
 
     .results .grid {
         display: grid;
+        row-gap: 1em;
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* PAGINATION */
+    .pagination {
+        margin-top: 1em;
+    }
+
     .buttons-prev-next {
         justify-content: center;
     }
@@ -378,6 +426,13 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 40px;
+    }
 
     .page-header {
         display: none;
@@ -464,7 +519,6 @@
     }
 
     /* PRODUCTS */
-
     .section-product-and-filters {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
@@ -473,6 +527,21 @@
 
     .button-filters {
         display: none;
+    }
+
+    .product-filters {
+        justify-content: start;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        border-radius: 1em 1em 0em 0em;
+        padding: 0 1em;
+        margin-top: 1em;
+        }
+        
+    .filters {
+        border: 0.2em solid var(--color-primary);
+        border-radius: 0em 0em 1em 1em;
+        padding: 2em 1em;
     }
 
     .filter-options {
@@ -498,10 +567,15 @@
 
     .results .grid {
         display: grid;
+        row-gap: 1em;
         grid-template-columns: repeat(3, 1fr);
     }
 
     /* PAGINATION */
+    .pagination {
+        margin-top: 1em;
+    }
+
     .buttons-prev-next {
         justify-content: center;
     }
@@ -511,6 +585,10 @@
     }
 
     /* FOOTER */
+    .page-footer {
+        padding: 1.5em 0;
+    }
+
     .legal > li {
         padding: 0 1rem;
     }
@@ -531,6 +609,13 @@
 
 /* For full HD display & above */
 @media only screen and (min-width: 1920px) {
+
+    .container {
+        max-width: 2200px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0 40px;
+    }
 
     .page-header {
         display: none;
@@ -633,6 +718,21 @@
         display: block;
     }
 
+    .product-filters {
+        justify-content: start;
+        background-color: var(--color-primary);
+        color: var(--color-light);
+        border-radius: 1em 1em 0em 0em;
+        padding: 0 1em;
+        margin-top: 1em;
+        }
+        
+    .filters {
+        border: 0.2em solid var(--color-primary);
+        border-radius: 0em 0em 1em 1em;
+        padding: 2em 1em;
+    }
+
     .product img {
         height: 40em;
     }
@@ -652,10 +752,15 @@
 
     .results .grid {
         display: grid;
+        row-gap: 1em;
         grid-template-columns: repeat(3, 1fr);
     }
 
     /* PAGINATION */
+    .pagination {
+        margin-top: 1em;
+    }
+
     .buttons-prev-next {
         justify-content: center;
     }

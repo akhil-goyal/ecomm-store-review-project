@@ -9,6 +9,11 @@
 :root {
     --main-font: 'Lato', sans-serif;
     --cursive-font: 'Dancing Script', cursive;
+    --color-primary: #123d12;
+    --color-secondary: #3e7047;
+    --color-light: #ffffff;
+    --color-warning: #e2ab21;
+    --color-danger: #660000;
     --pad-and-gap : 0.4em;
   }
   /* ---------------------------------------------------------------- */
@@ -35,13 +40,13 @@
   
   /* Scrollbar Thumb */
   ::-webkit-scrollbar-thumb {
-    background:  #123d12; 
+    background:  var(--color-primary);
     border-radius: 10px;
   }
 
   /* On hovering at Scrollbar */
   ::-webkit-scrollbar-thumb:hover {
-    background:  rgb(18, 61, 18); 
+    background:  var(--color-primary);
   }
   /* ---------------------------------------------------------------- */
 
@@ -154,13 +159,6 @@ legend.legend {
 
 
 /* ------------------------- Layout Elements ----------------------- */
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-    overflow: auto;
-    padding: 0 40px;
-}
-
 .grid {
     display: grid;
     gap: 2em;

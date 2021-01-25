@@ -1,4 +1,11 @@
 /* ------------------------- Section HEADER ----------------------- */
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 15px;
+}
+
 .page-header {
   justify-content: space-between;
   height: 3em;
@@ -9,7 +16,7 @@
 }
 
 .page-header-webview a {
-  color: rgb(18, 61, 18);
+  color: var(--color-primary);
 }
 
 .header-webview-nav a{
@@ -87,7 +94,7 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #fff;
+  color: var(--color-light);
   display: block;
   transition: 0.3s;
 }
@@ -105,7 +112,7 @@
 }
 
 .separator {
-  border-top: 1px solid rgba(175, 175, 175, 0.171);
+  border-top: 1px solid var(--color-primary);
   width: 80%;
   margin: 0 auto;
 }
@@ -128,7 +135,7 @@
   ),url(../img/hero.jpg);
   background-size: cover; 
   background-position: center;
-  color: #fff;
+  color: var(--color-light);
   text-align: center;
   padding: 8rem 0;
 }
@@ -181,7 +188,7 @@ font-weight: lighter;
   background-size: cover; 
   background-position: center;
   border-radius: 1rem;
-  color: #fff;
+  color: var(--color-light);
   padding: 0em 2em;
   display: grid;
   align-items: center;
@@ -196,7 +203,7 @@ font-weight: lighter;
   background-size: cover; 
   background-position: center;
   border-radius: 1rem;
-  color: #fff;
+  color: var(--color-light);
   padding: 0em 2em;
   display: grid;
   align-items: center;
@@ -211,7 +218,7 @@ font-weight: lighter;
   background-size: cover; 
   background-position: center;
   border-radius: 1rem;
-  color: #fff;
+  color: var(--color-light);
   padding: 0em 2em;
   display: grid;
   align-items: center;
@@ -221,10 +228,6 @@ font-weight: lighter;
 
 
 /* ------------------------ Section FILTERS ----------------------- */
-.product-filters {
-  justify-content: start;
-}
-
 .filter-options {
   display: none;
 }
@@ -254,18 +257,19 @@ font-weight: lighter;
   cursor: pointer;
   display: inline-block;
   background-color: transparent;
-  border: 1px solid rgb(4, 90, 4);
+  border: 1px solid var(--color-primary);
   border-radius: 4px;
   padding: 2px 5px;
-  color:rgb(4, 90, 4);
+  color: var(--color-primary);
+  margin: 0.1em;  
 }
 
 .filter-plant-types input:checked + label,
 .filter-pot-requirement input:checked + label,
 .filter-plant-size input:checked + label
 {
-  background-color:rgb(4, 90, 4);
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 .fa-sliders-h {
@@ -276,7 +280,7 @@ font-weight: lighter;
 .far fa-star,
 .fa-star-half-alt
  {
-  color: goldenrod;
+  color: var(--color-warning);
 }
 /* ---------------------------------------------------------------- */
 
@@ -290,6 +294,7 @@ font-weight: lighter;
 .results .grid {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 1em;
 }
 
 .results fieldset {
@@ -301,6 +306,10 @@ font-weight: lighter;
   width: 100%;
   border-radius: 0.5rem;
   object-fit: cover;
+}
+
+.products-list {
+  margin-top: 1em;
 }
 
 .product-title-icons {
@@ -321,18 +330,18 @@ font-weight: lighter;
 }
 
 .fa-shopping-cart {
-  color: rgb(4, 90, 4);
+  color: var(--color-primary);
 }
 .fa-heart {
-  color: maroon;
+  color: var(--color-danger);
 }
 
 del {
-  color: maroon;
+  color: var(--color-danger);
 }
 
 ins {
-  color: rgb(4, 90, 4);
+  color: var(--color-primary);
 }
 
 .pot-fields input,
@@ -360,27 +369,28 @@ ins {
   cursor: pointer;
   display: inline-block;
   background-color: transparent;
-  border: 1px solid rgb(4, 90, 4);
+  border: 1px solid var(--color-primary);
   border-radius: 4px;
   padding: 2px 5px;
-  color:rgb(4, 90, 4);
+  color: var(--color-primary);
+  margin: 0.1em;  
 }
 
 .pot-fields input:checked + label,
 .size-fields input:checked + label
 {
-  background-color:rgb(4, 90, 4);
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 
 .button-buy {
   cursor: pointer;
   display: inline-block;
-  background-color:  maroon;
-  border: 1px solid maroon;
+  background-color:  var(--color-danger);
+  border: 1px solid var(--color-danger);
   border-radius: 4px;
   padding: 2px 5px;
-  color: #fff;
+  color: var(--color-light);
 }
 
 .results .grid{
@@ -391,20 +401,24 @@ ins {
 
 
 /* ----------------------- Section PAGINATION --------------------- */
+.pagination {
+  margin-top: 1em;
+}
+
 .pages {
   justify-content: center;
 }
 
 .pages > li {
   margin: calc(var(--pad-and-gap) / 2);
-  background-color: rgb(62, 112, 71);
+  background-color: var(--color-secondary);
   padding: 0.4rem 0.8rem;
   border-radius: 0.3rem;
   margin-top: 1rem;
 }
 
 .pages > li a {
-  color: #fff;
+  color: var(--color-light);
 }
 
 .buttons-prev-next {
@@ -414,8 +428,8 @@ ins {
 
 .buttons-prev-next a {
   background-color: transparent;
-  color: rgb(18, 61, 18);
-  border: 1px solid rgb(18, 61, 18);
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 1rem;
   height: 1.8rem;
   width: 6rem;
@@ -427,14 +441,14 @@ ins {
 
 /* ------------------------ Section FOOTER ------------------------ */
 .page-footer {
-  background-color: rgb(18, 61, 18);
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-light);
   padding: 1em 0;
   margin-top: 1rem;
 }
 
 .page-footer a {
-  color: #fff;
+  color: var(--color-light);
 }
 
 .page-footer p {
@@ -445,7 +459,7 @@ ins {
 .legal {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1em;
 }
 
 .social > li {
@@ -464,7 +478,7 @@ ins {
   height: 3.5rem; 
   width: 3.5rem; 
   background-color: rgb(160, 160, 160); 
-  color: #fff; 
+  color: var(--color-light); 
   border-radius: 0.5rem; 
   position: fixed; 
   bottom: 2rem; 
