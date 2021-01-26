@@ -1,11 +1,11 @@
-  /* -------------------------- Fonts Import ------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-  /* ---------------------------------------------------------------- */
+/* -------------------------- Fonts Import ------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/* ---------------------------------------------------------------- */
 
 
 
-  /* --------------------------- Fonts Used ------------------------- */
+/* ------------------------- Root Variables ----------------------- */
 :root {
     --main-font: 'Lato', sans-serif;
     --cursive-font: 'Dancing Script', cursive;
@@ -16,16 +16,11 @@
     --color-danger: #660000;
     --pad-and-gap : 0.4em;
   }
-  /* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
 
 
 
-  /* -------------------------- Colors Used ------------------------ */
-  /* ---------------------------------------------------------------- */
-
-
-
-   /* ------------------------- Scroll Bar ----------------------- */
+/* --------------------------- Scroll Bar ------------------------- */
 
   /* Scrollbar Width */
   ::-webkit-scrollbar {
@@ -48,11 +43,11 @@
   ::-webkit-scrollbar-thumb:hover {
     background:  var(--color-primary);
   }
-  /* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
 
 
 
-  /* ------------------------- Basic Resets ----------------------- */
+/* ------------------------- Basic Resets ----------------------- */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -100,7 +95,20 @@ input, button {
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
+  transition: all .2s ease-in-out;
 } 
+
+button:hover {
+  transform: scale(1.1);
+}
+
+label{
+  transition: all .2s ease-in-out;
+}
+
+label:hover {
+  transform: scale(1.07);
+}
 
 fieldset {
 	display: flex;
@@ -191,18 +199,21 @@ legend.legend {
     grid-column: 2/ span 4;
   }
 
-
   .flex {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
   }
+
+  .hidden {
+    display: none;
+  }
 /* ---------------------------------------------------------------- */
 
 
 
-  /* --------------------------- Text Sizes ------------------------- */
+/* --------------------------- Text Sizes ------------------------- */
   .lead-text {
     font-size: 20px;
   }
@@ -226,11 +237,11 @@ legend.legend {
   .text-center {
     text-align: center;
   }
-  /* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
 
 
 
-  /* ----------------------------- Margins --------------------------- */
+/* ----------------------------- Margins --------------------------- */
   .my-1 {
     margin: 1rem 0;
   }
@@ -274,11 +285,11 @@ legend.legend {
   .m-5 {
     margin: 4rem;
   }
-  /* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
 
 
 
-   /* ---------------------------- Paddings -------------------------- */
+/* ---------------------------- Paddings -------------------------- */
   .py-1 {
     padding: 1rem 0;
   }
@@ -318,4 +329,4 @@ legend.legend {
   .p-5 {
     padding: 4rem;
   }
-  /* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
