@@ -101,6 +101,8 @@
 }
 /* ---------------------------------------------------------------- */
 
+
+
 /* ------------------------- Section FOOTER ----------------------- */
 .legal > li {
     padding: 0 0.7em;
@@ -244,6 +246,37 @@ h3,
     margin: 1em;
 }
 /* ---------------------------------------------------------------- */
+
+
+
+/* -------------------- Section CUSTOMER REVIEWS ------------------ */
+.customer-reviews {
+    margin-top: 2em;
+  }
+  
+.reviews article {
+    height: 7em;
+}
+
+.reviews img {
+    border-radius: 4em;
+}
+/* ---------------------------------------------------------------- */
+  
+  
+
+/* ----------------------- Section NEWSLETTER --------------------- */
+.newsletter-subscription {
+    margin-top: 3em;
+}
+
+.newsletter-email {
+    height: 2.5em;
+    width: 30%;
+}
+/* ---------------------------------------------------------------- */
+
+
 
 /* ------------------------- Section FOOTER ----------------------- */
 .legal > li {
@@ -443,6 +476,61 @@ h3,
     margin: 1em;
 }
 /* ---------------------------------------------------------------- */
+
+/* -------------------- Section CUSTOMER REVIEWS ------------------ */
+.customer-reviews {
+    margin-top: 2em;
+}
+
+.reviews {
+    display: flex;
+}
+
+.reviews article {
+    height: 18em;
+    width: 33.3%;
+}
+
+.reviews img {
+    height: 4em;
+    width: 4.5em;
+    border-radius: 3em;
+}
+
+.reviews p {
+    color: var(--color-primary);
+}
+
+.review-1,
+.review-2,
+.review-3 {
+    display: flex;
+    gap: 1em;
+}
+
+.separator-vertical {
+    display: block;
+    height: 8em;
+    width: 0.1em;
+}
+/* ------------------------------------------------------------------ */
+  
+  
+  /* ----------------------- Section NEWSLETTER --------------------- */
+.newsletter-subscription {
+    margin-top: 3em;
+}
+
+.newsletter-email {
+    height: 2.5em;
+    width: 30%;
+}
+
+.newsletter-button {
+    height: 2em;
+    width: 6em;
+}
+  /* ---------------------------------------------------------------- */
 
 /* ------------------------- Section FOOTER ----------------------- */
 .legal > li {
@@ -649,104 +737,6 @@ h3,
 }
 /* ---------------------------------------------------------------- */
 
-/* -------------------- Section CUSTOMER REVIEWS ------------------ */
-.customer-reviews {
-    margin-top: 2em;
-}
-
-.reviews {
-    display: flex;
-    border: 1px solid var(--color-primary);
-    border-radius: 2em;
-    /* background-color: rgb(221, 255, 230); */
-    margin-top: 1em;
-}
-
-.reviews article {
-    height: 13em;
-    width: 33.3%;
-    align-items: center;
-    padding: 0 2em;
-}
-
-.reviews img {
-    height: 5em;
-    width: 5.5em;
-    border-radius: 4em;
-}
-
-.reviews p {
-    color: var(--color-primary);
-}
-
-.review-1,
-.review-2,
-.review-3 {
-    display: flex;
-    gap: 1em;
-}
-
-.separator-vertical {
-    height: 8em;
-    width: 0.1em;
-    background-color: rgb(194, 194, 194);
-    align-self: center;
-}
-/* ---------------------------------------------------------------- */
-
-/* ----------------------- Section NEWSLETTER --------------------- */
-.newsletter-subscription {
-    margin-top: 3em;
-}
-
-.newsletter {
-    height: 25em;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.671), 
-        rgba(0, 0, 0, 0.671)
-    ),url(../img/newsletter.jpg);
-    background-size: cover; 
-    background-position: center;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    row-gap: 2em;
-}
-
-.newsletter p {
-    color: var(--color-light);
-    font-size: 1.2em;
-}
-
-.newsletter small {
-    color: var(--color-light);
-}
-
-.newsletter-email {
-    background-color: transparent;
-    justify-self: center;
-    height: 2.5em;
-    width: 30%;
-    border: 1px solid var(--color-light);
-    border-radius: 1em;
-    color: var(--color-light);
-    text-align: center;
-}
-
-.newsletter-email::placeholder{
-    color: var(--color-light);
-    text-align: center;
-}
-
-.newsletter-button {
-    height: 3em;
-    width: 10em;
-    background-color: var(--color-primary);
-    color: var(--color-light);
-    justify-self: center;
-}
-/* ---------------------------------------------------------------- */
-
 /* ----------------------- Section PAGINATION --------------------- */
 .pagination {
     margin-top: 1em;
@@ -758,6 +748,52 @@ h3,
 
 .buttons-prev-next a {
     margin: 1em;
+}
+/* ---------------------------------------------------------------- */
+
+/* -------------------- Section CUSTOMER REVIEWS ------------------ */
+.customer-reviews {
+    margin-top: 2em;
+}
+
+.reviews {
+    display: flex;
+}
+
+.reviews article {
+    height: 13em;
+    width: 33.3%;
+}
+
+.reviews img {
+    height: 5em;
+    width: 5.5em;
+}
+
+.separator-vertical {
+    display: block;
+    height: 8em;
+    width: 0.1em;
+}
+/* ---------------------------------------------------------------- */
+
+/* ----------------------- Section NEWSLETTER --------------------- */
+.newsletter-subscription {
+    margin-top: 3em;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+}
+
+.newsletter-email {
+    height: 2.5em;
+    width: 30%;
+}
+
+.newsletter-button {
+    height: 3em;
+    width: 10em;
 }
 /* ---------------------------------------------------------------- */
 
@@ -971,12 +1007,69 @@ body a,p{
 
 .buttons-prev-next a {
     margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2em;
+    width: 7em;
+}
+/* ---------------------------------------------------------------- */
+
+/* -------------------- Section CUSTOMER REVIEWS ------------------ */
+.customer-reviews {
+    margin-top: 2em;
+}
+
+.reviews {
+    display: flex;
+}
+
+.reviews article {
+    height: 15em;
+    width: 33.3%;
+    padding: 0 2em;
+}
+
+.reviews img {
+    height: 6em;
+    width: 6.5em;
+    border-radius: 4em;
+}
+
+.separator-vertical {
+    display: block;
+    height: 8em;
+    width: 0.1em;
+}
+/* ---------------------------------------------------------------- */
+
+/* ----------------------- Section NEWSLETTER --------------------- */
+.newsletter-subscription {
+    margin-top: 3em;
+}
+
+.newsletter p {
+    font-size: 1.4em;
+}
+
+.newsletter small {
+    color: var(--color-light);
+}
+
+.newsletter-email {
+    height: 2.5em;
+    width: 30%;
+}
+
+.newsletter-button {
+    height: 3em;
+    width: 10em;
 }
 /* ---------------------------------------------------------------- */
 
 /* ------------------------- Section FOOTER ----------------------- */
 .page-footer {
-    height: 10em;
+    height: 14em;
 }
 
 .legal > li {
